@@ -115,3 +115,597 @@
         .nav-cta {
             background: transparent;
             border: 1px solid var(--accent-green);
+            color: var(--accent-green);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent-green);
+            color: var(--bg-primary);
+        }
+
+        /* Section Global Spacing */
+        section {
+            padding: 90px 0 60px 0;
+        }
+
+        /* Hero / Insights Section */
+        .hero {
+            background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.05), transparent 45%);
+        }
+
+        .hero-layout {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .hero-desc-1 {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .hero-desc-2 {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        /* System Showcase Panel */
+        .hero-visual-panel {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .panel-row {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+        }
+        .panel-row:last-child { border: none; }
+        .panel-label { color: var(--text-secondary); }
+        .panel-value { font-family: 'JetBrains Mono', monospace; color: #ffffff; }
+
+        /* Trust/Data Banner */
+        .trust-banner {
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            background: var(--bg-secondary);
+            padding: 24px 0;
+        }
+        
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .stat-lbl {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Section Headings */
+        .section-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* Framework / Services Block */
+        .section-divider {
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .section-divider::before, .section-divider::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 1px;
+            background-color: var(--border-subtle);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            padding: 32px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Insights Macro Block Expansion */
+        .insights-panel-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .insights-mini-card {
+            background: linear-gradient(135deg, var(--bg-secondary), rgba(11, 21, 40, 0.4));
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .insights-mini-card h4 {
+            font-size: 1.05rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* About Block Modifications */
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .about-body p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .framework-sidebar {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 35px;
+        }
+
+        .framework-sidebar h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .bullet-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .bullet-list li {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .bullet-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+        }
+
+        /* Contact & Proposal Form System */
+        .form-section {
+            background-image: linear-gradient(to bottom right, var(--bg-secondary), var(--bg-primary));
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 48px;
+            max-width: 680px;
+            margin: 0 auto 60px auto;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .required-mark {
+            color: #ef4444;
+            margin-left: 2px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 16px;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.2s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--accent-green);
+        }
+
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%239ca3af' class='bi bi-chevron-down' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0 25px 0;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            accent-color: var(--accent-green);
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .checkbox-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--accent-green);
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        button:hover {
+            background-color: #059669;
+        }
+
+        /* Accessibility Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-green);
+            color: var(--bg-primary);
+            padding: 8px;
+            z-index: 200;
+            transition: top 0.2s;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .skip-link:focus { top: 0; }
+
+        /* Unified Corporate Footer Block */
+        footer {
+            border-top: 1px solid var(--border-subtle);
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-email {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .footer-email:hover { color: #059669; }
+        .footer-legal { font-size: 0.8rem; color: var(--text-secondary); }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 968px) {
+            .hero-layout, .about-layout, .insights-panel-layout { grid-template-columns: 1fr; gap: 32px; }
+            h1 { font-size: 2.3rem; }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .form-row { grid-template-columns: 1fr; gap: 0; }
+            .form-section { padding: 24px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="#insights" class="logo">
+                <div class="logo-dot"></div> VETERAN LOAN SERVICING
+            </a>
+            <div class="nav-links">
+                <a href="#insights">Insights</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="nav-cta">Request Proposal</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+        
+        <section id="insights" class="hero">
+            <div class="hero-layout">
+                <div>
+                    <span class="code-pill">Institutional Grade Platform</span>
+                    <h1>Institutional Asset Servicing & <span class="highlight">Recovery Infrastructure</span></h1>
+                    <p class="hero-desc-1">
+                        Our platform delivers data-driven portfolio administration engineered strictly for Merchant Cash Advance (MCA), commercial factoring, and alternative credit portfolios.
+                    </p>
+                    <p class="hero-desc-2">
+                        We remove the operational overhead of third-party loan tracking, giving your fund institutional scalability with zero internal drag. By combining real-time ledger automation via secure cloud networks with our direct, in-house legal recovery framework in Texas and Oklahoma, we provide a seamless, end-to-end back office.
+                    </p>
+                </div>
+                
+                <div class="hero-visual-panel">
+                    <span class="code-pill" style="background:transparent; padding:0;">System Node Network</span>
+                    <div class="panel-row"><span class="panel-label">Ledger Sync</span><span class="panel-value highlight">ONLINE (Real-Time)</span></div>
+                    <div class="panel-row"><span class="panel-label">ACH Gateway</span><span class="panel-value">NACHA Compliant</span></div>
+                    <div class="panel-row"><span class="panel-label">Legal Jurisdiction</span><span class="panel-value">TX / OK Regional Framework</span></div>
+                    <div class="panel-row"><span class="panel-label">Compliance Layer</span><span class="panel-value">Unified In-House</span></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="trust-banner">
+            <div class="trust-grid">
+                <div><div class="stat-num">0%</div><div class="stat-lbl">Internal Drag</div></div>
+                <div><div class="stat-num">Micro-ACH</div><div class="stat-lbl">Batch Processing</div></div>
+                <div><div class="stat-num">Cloud-Native</div><div class="stat-lbl">Architecture</div></div>
+                <div><div class="stat-num">In-House</div><div class="stat-lbl">Legal Framework</div></div>
+            </div>
+        </div>
+
+        <section id="services">
+            <div class="section-header">
+                <span class="code-pill">Operational Defenses</span>
+                <h2>Servicing Framework Standards</h2>
+                <p>We ensure your assets remain compliant, your statement loops stay accurate, and default friction is instantly mitigated under a single corporate roof.</p>
+            </div>
+
+            <div class="section-divider">Operational Defenses &nbsp;|&nbsp; Servicing Framework</div>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Administrative Default Management</h3>
+                    <p>Accelerated administrative tracking for non-performing accounts. Fees are automatically generated, layered onto the borrower's payoff ledger balance, and recovered directly at settlement or collateral liquidation.</p>
+                </div>
+                <div class="card">
+                    <h3>High-Velocity Asset Servicing</h3>
+                    <p>Custom sub-servicing tailored for complex commercial MCA, factoring portfolios, and multi-layered business lines. Includes automated micro-ACH daily/weekly batch drafting via secure NACHA gateways.</p>
+                </div>
+                <div class="card">
+                    <h3>Commercial Portfolio Ledgering</h3>
+                    <p>Comprehensive third-party loan administration, automated recurring statement distributions, and daily participant yield splits. Powered via secure cloud architecture.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-layout">
+                <div class="about-body">
+                    <span class="code-pill">Corporate Profile</span>
+                    <h2>Institutional Oversight Backed by <br><span class="highlight">In-House Legal Enforcement</span></h2>
+                    <br>
+                    <p>
+                        Alternative credit vulnerabilities often derive from the operational disconnect between ledgering platforms and collections teams. Founded and led by <strong>Robert Newark</strong>, our platform delivers an institutional sub-servicing engine integrated directly with an active, practicing commercial collections and contract enforcement law firm across Texas and Oklahoma.
+                    </p>
+                    <p>
+                        Operating directly across our core Texas and Oklahoma footprint, we eliminate the friction of third-party vendor handoffs. When an account hits delinquency, we do not simply flag a spreadsheet—our legal practice steps in under the exact same corporate roof to execute rapid UCC remedies, non-judicial execution, and direct asset recovery.
+                    </p>
+                </div>
+
+                <div class="framework-sidebar">
+                    <span class="code-pill" style="margin-bottom: 10px;">Operational Shield</span>
+                    <h3>The Unified Advantage</h3>
+                    <ul class="bullet-list">
+                        <li>Zero Outside Vendor Handoff Gaps</li>
+                        <li>Direct Regional Jurisdiction Enforcement</li>
+                        <li>Real-Time Ledger-to-Lawsuit Flow</li>
+                        <li>Automated Default Tracking Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="strategic-insights" style="border-top: 1px solid var(--border-subtle); padding-top: 60px;">
+            <div class="section-header">
+                <span class="code-pill">Strategic Analysis</span>
+                <h2>Risk Mitigation & Regional Frameworks</h2>
+                <p>Why modern alternative credit funds rely on a unified ledger-to-law firm pipeline over standard collection agencies.</p>
+            </div>
+            
+            <div class="insights-panel-layout">
+                <div class="insights-mini-card">
+                    <h4>[Node 01] The Vendor Handoff Gap</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Traditional tracking configurations fail during delinquency because accounting software cannot execute legal remedies. By maintaining collections under the same corporate roof as asset tracking, default assets route instantly to active litigation parameters before a borrower can vanish or liquidate physical collateral.</p>
+                </div>
+                <div class="insights-mini-card">
+                    <h4>[Node 02] Texas & Oklahoma Jurisdiction Advantage</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Enforcing merchant cash advance breaches or commercial factor defaults requires swift legal mastery of regional UCC filings and local non-judicial execution constraints. Our in-house framework isolates legal defense models to maximize recovery velocity across the TX and OK regional footprints.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="form-section">
+                <div style="text-align: center;"><span class="code-pill">Inquiry Processing</span></div>
+                <h2>Request a Customized Financing Proposal</h2>
+                <p>Please submit the inquiry form below to enable our specialists to evaluate your capital requirements and develop a comprehensive asset solution aligned with your strategic objectives.</p>
+                
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New Portfolio Intake Lead - Veteran Loan Servicing">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name<span class="required-mark">*</span></label>
+                            <input type="text" id="first-name" name="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name<span class="required-mark">*</span></label>
+                            <input type="text" id="last-name" name="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email<span class="required-mark">*</span></label>
+                        <input type="email" id="email" name="Email Address" required placeholder="name@yourfund.com">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="portfolio-aum">Portfolio Volume / AUM<span class="required-mark">*</span></label>
+                            <select id="portfolio-aum" name="Portfolio AUM" required>
+                                <option value="" disabled selected>Select Scope...</option>
+                                <option value="Under $5M">Under $5M</option>
+                                <option value="$5M - $20M">$5M - $20M</option>
+                                <option value="$20M+">$20M+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="jurisdiction">Core Jurisdiction Focus<span class="required-mark">*</span></label>
+                            <select id="jurisdiction" name="Target Jurisdiction" required>
+                                <option value="" disabled selected>Select Region...</option>
+                                <option value="Texas Only">Texas Only</option>
+                                <option value="Oklahoma Only">Oklahoma Only</option>
+                                <option value="TX / OK Multi-State">TX / OK Multi-State</option>
+                                <option value="National Alternative">National Alternative</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message / System Objectives<span class="required-mark">*</span></label>
+                        <textarea id="message" name="Inquiry Message" rows="4" required placeholder="Outline tracking parameters or contract enforcement targets..."></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="Newsletter Opt-In" value="Yes Verified" checked>
+                        <label for="newsletter" class="checkbox-label">Sign up for news and updates</label>
+                    </div>
+                    
+                    <button type="submit">Send Proposal Request</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Veteran Loan Servicing</div>
+            <a href="mailto:info@veteranloanservicing.com" class="footer-email">info@veteranloanservicing.com</a>
+            <p class="footer-legal">&copy; 2026 Veteran Loan Servicing. Private debt portfolio assessments and contract configurations remain completely confidential under enterprise security frameworks.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
