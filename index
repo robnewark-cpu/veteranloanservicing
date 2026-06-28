@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Institutional Asset Servicing & Recovery Infrastructure</title>
+    <title>Veteran Loan Servicing | Institutional Asset Servicing & Recovery Infrastructure</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,6 @@
             --bg-secondary: #0b1528;     /* Deep Institutional Navy */
             --bg-card: #111e36;          /* Distinct Layered Card Slate */
             --accent-green: #10b981;     /* High-trust Emerald Green */
-            --accent-green-glow: rgba(16, 185, 129, 0.15);
             --text-primary: #f9fafb;     /* High-contrast Off-White */
             --text-secondary: #9ca3af;   /* Muted Gray for Body Copy */
             --border-subtle: rgba(255, 255, 255, 0.08);
@@ -27,6 +26,10 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -65,7 +68,7 @@
         /* Navigation Header */
         nav {
             border-bottom: 1px solid var(--border-subtle);
-            background: rgba(3, 7, 18, 0.8);
+            background: rgba(3, 7, 18, 0.9);
             backdrop-filter: blur(12px);
             position: sticky;
             top: 0;
@@ -83,6 +86,32 @@
             font-weight: 700;
             font-size: 1.1rem;
             letter-spacing: -0.02em;
+            text-decoration: none;
+            color: var(--text-primary);
             display: flex;
             align-items: center;
-            gap: 8
+            gap: 8px;
+        }
+
+        .logo-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 24px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-cta {
+            background: transparent;
+            border: 1px solid var(--accent-green);
