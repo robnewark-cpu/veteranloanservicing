@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Asset Sub-Servicing & Recovery | Veteran Loan Servicing</title>
+    <meta name="description" content="Bank-grade portfolio tracking built to protect private credit yields. Commercial portfolio ledgering, administrative default management, and high-velocity asset servicing.">
+    <style>
+        :root {
+            --bg-main: #ffffff;
+            --bg-card: #f8fafc;
+            --gold-accent: #92400e;
+            --navy-dark: #0f172a;
+            --text-muted: #475569;
+            --border-light: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--navy-dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+            position: fixed;
+            top: 0; left: 0; right: 0; z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px; margin: 0 auto; padding: 20px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--navy-dark); text-decoration: none; text-transform: uppercase; letter-spacing: -0.5px; }
+        .logo span { color: var(--gold-accent); }
+        .nav-links { display: flex; gap: 25px; list-style: none; align-items: center; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--navy-dark); }
+        .btn-proposal {
+            background-color: var(--gold-accent); color: #ffffff !important; padding: 10px 18px;
+            border-radius: 4px; font-weight: 600 !important; font-size: 0.9rem !important;
+        }
+        .btn-proposal:hover { background-color: #78350f; }
+        .hero-section { max-width: 1100px; margin: 0 auto; padding: 160px 20px 60px 20px; text-align: center; }
+        .hero-title { font-size: 2.75rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px; letter-spacing: -1px; color: var(--navy-dark); }
+        .hero-subtitle { font-size: 1.25rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 35px auto; font-weight: 500; }
+        .btn-action {
+            background-color: var(--navy-dark); color: #ffffff; padding: 14px 28px;
+            border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block;
+        }
+        .btn-action:hover { background-color: #1e293b; }
+        .services-section { padding: 80px 20px; background-color: #ffffff; border-top: 1px solid var(--border-light); text-align: center; }
+        .section-title { font-size: 2.2rem; color: var(--navy-dark); margin-bottom: 40px; font-weight: 700; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; }
+        .service-card { background-color: var(--bg-card); padding: 35px 30px; border-radius: 8px; border: 1px solid var(--border-light); border-top: 4px solid var(--gold-accent); text-align: left; }
+        .service-card h3 { font-size: 1.3rem; margin-bottom: 15px; color: var(--navy-dark); }
+        .service-card p { color: var(--text-muted); font-size: 0.95rem; }
+        .expertise-section { padding: 80px 20px; background-color: var(--bg-card); border-top: 1px solid var(--border-light); }
+        .expertise-content { max-width: 850px; margin: 0 auto; text-align: center; }
+        .expertise-p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px; line-height: 1.7; }
+        .btn-secondary { background-color: transparent; color: var(--navy-dark); border: 2px solid var(--navy-dark); padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; }
+        .btn-secondary:hover { background-color: var(--navy-dark); color: #ffffff; }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.2rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Veteran <span>Loan Servicing</span></a>
+            <ul class="nav-links">
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#review">Operational Review</a></li>
+                <li><a href="qualification.html" class="btn-proposal">Request Proposal</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h1 class="hero-title">Institutional Asset Sub-Servicing & Recovery Engine</h1>
+            <p class="hero-subtitle">Bank-Grade Portfolio Tracking Built to Protect Private Credit Yields.</p>
+            <a href="#review" class="btn-action">Schedule an Operational Review</a>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Commercial Portfolio Ledgering</h3>
+                    <p>Comprehensive third-party loan administration, automated recurring statement distributions, and daily participant yield splits. Powered via secure cloud architecture.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Administrative Default Management</h3>
+                    <p>Accelerated administrative tracking for non-performing accounts. Fees are automatically generated, layered onto the borrower's payoff ledger balance, and recovered directly at settlement or collateral liquidation.</p>
+                </div>
+                <div class="service-card">
+                    <h3>High-Velocity Asset Servicing</h3>
+                    <p>Custom sub-servicing tailored for complex commercial MCA, factoring portfolios, and multi-layered business lines. Includes automated micro-ACH daily/weekly batch drafting via secure NACHA gateways.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="review" class="expertise-section">
+            <div class="expertise-content">
+                <h2 class="section-title" style="margin-bottom: 20px;">Expertise Grounded in Legal & Operational Precision</h2>
+                <p class="expertise-p">Veteran Loan Servicing combines institutional, bank-grade ledger administration with an active, practicing commercial collections and enforcement law firm. Licensed across our core Texas and Oklahoma footprint, we protect your fund's yields from underwriting to rapid collateral liquidation.</p>
+                <a href="qualification.html" class="btn-secondary">Request an Operational Evaluation</a>
+            </div>
+        </section>
+    </main>
+    <footer style="background-color: #f8fafc; padding: 50px 20px; border-top: 1px solid var(--border-light); text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+        <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+            <p style="font-weight: 700; color: var(--navy-dark); text-transform: uppercase;">Veteran Loan Servicing</p>
+            <p>General Portfolio Routing: <a href="mailto:info@veteranloanservicing.com" style="color: var(--gold-accent); text-decoration: none; font-weight: 600;">info@veteranloanservicing.com</a></p>
+            <p>&copy; 2026 Veteran Loan Servicing. All legal rights reserved. | <a href="privacy.html" style="color: var(--gold-accent); text-decoration: none;">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
