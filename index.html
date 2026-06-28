@@ -411,4 +411,78 @@
 
         select {
             appearance: none;
-            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0 25px 0;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            accent-color: var(--accent-green);
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .checkbox-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--accent-green);
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        button:hover {
+            background-color: #059669;
+        }
+
+        /* Unified Corporate Footer Block */
+        footer {
+            border-top: 1px solid var(--border-subtle);
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-email {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .footer-email:hover { color: #059669; }
+        .footer-legal { font-size: 0.8rem; color: var(--text-secondary); }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 968px) {
+            .hero-layout, .about-layout, .insights-panel-layout { grid-template-columns: 1fr; gap: 32px; }
+            h1 { font-size: 2.3rem; }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .form-row { grid-template-columns: 1fr; gap: 0;
