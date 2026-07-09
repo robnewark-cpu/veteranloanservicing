@@ -1,0 +1,7 @@
+# Legacy route continuity — previous extensionless routes now resolve to
+# their modernized, keyword-optimized institutional page equivalents.
+/services /institutional-services 301
+/services/ /institutional-services 301
+/risk-compliance /enterprise-risk-compliance 301
+/asset-technology /global-asset-technology 301
+/demo /request-demo 301

@@ -1,0 +1,15 @@
+{
+  "name": "veteranloanservicing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Veteran Loan Servicing — institutional commercial loan servicing platform (static site, deployed via Cloudflare Workers static assets).",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "validate": "node scripts/validate-site.mjs"
+  },
+  "devDependencies": {
+    "node-html-parser": "^6.1.13",
+    "wrangler": "^4.0.0"
+  }
+}
