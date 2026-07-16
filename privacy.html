@@ -28,13 +28,36 @@
 <header class="site-header">
   <div class="container nav-bar">
     <a href="/" class="logo">
-      <span class="logo-mark">VL</span>
+      <img src="/favicon.svg" alt="Veteran Loan Servicing Mark" width="32" height="32" style="display:inline-block; vertical-align:middle; margin-right:8px;">
       <span class="logo-text"><span class="logo-name">VETERAN LOAN SERVICING</span><small>Institutional Asset Servicing</small></span>
     </a>
     <nav aria-label="Primary">
       <ul class="nav-primary">
-        <li><a class="nav-link" href="/institutional-services">Institutional Services</a></li>
-        <li><a class="nav-link" href="/enterprise-risk-compliance">Risk &amp; Compliance</a></li>
+        <li>
+          <button type="button" class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="solutions-panel" data-mega-toggle>
+            Solutions
+            <svg class="chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="mega-panel" id="solutions-panel">
+            <a class="mega-item" href="/institutional-services">
+              <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7L12 3L21 7L12 11L3 7Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 12L12 16L21 12" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 17L12 21L21 17" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+              <div><h4>Institutional Services</h4><p>Commercial loan servicing & portfolio administration</p></div>
+            </a>
+            <a class="mega-item" href="/enterprise-risk-compliance">
+              <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3L20 6.5V11C20 16 16.5 19.5 12 21C7.5 19.5 4 16 4 11V6.5L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+              <div><h4>Enterprise Risk & Compliance</h4><p>Regulatory & audit frameworks for institutional lenders</p></div>
+            </a>
+            <a class="mega-item" href="/global-asset-technology">
+              <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12H20.5M12 3.5C14.5 6 15.7 9 15.7 12C15.7 15 14.5 18 12 20.5C9.5 18 8.3 15 8.3 12C8.3 9 9.5 6 12 3.5Z" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <div><h4>Global Asset Technology</h4><p>Servicing infrastructure built to scale with your portfolio</p></div>
+            </a>
+            <a class="mega-item" href="/case-studies">
+              <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V5M4 19H20M8 19V11M12 19V7M16 19V13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+              <div><h4>Portfolio Case Studies</h4><p>Verified outcomes across institutional portfolios</p></div>
+            </a>
+          </div>
+        </li>
+        <li><a class="nav-link" href="/case-studies">Case Studies</a></li>
         <li><a class="nav-link" href="/about">About</a></li>
         <li><a class="nav-link" href="/contact">Contact</a></li>
         <li class="mobile-cta-item"><a href="/request-demo" class="btn btn-primary btn-block">Request Platform Demo</a></li>
@@ -99,5 +122,13 @@
 </footer>
 
 <script src="/assets/js/main.js" defer></script>
+<script
+  src="https://site-chatbot-assets.pages.dev/widget.js"
+  data-worker-url="https://site-chatbots.robert-bb6.workers.dev"
+  data-site="vls"
+  data-name="Veteran Loan Servicing"
+  data-accent="#05070d"
+  data-greeting="Hi, I can help point you to the right person on our team. What can I help you with today?"
+></script>
 </body>
 </html>
