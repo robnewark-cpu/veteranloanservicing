@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veteran Loan Servicing — Institutional Commercial Loan Servicing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1B2D;
+    --navy-raise:#16253B;
+    --steel:#3E5C76;
+    --paper:#F7F7F5;
+    --gold:#B08D57;
+    --line:rgba(247,247,245,0.12);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--navy); color:var(--paper);
+    font-family:'Inter',sans-serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Fraunces',serif; letter-spacing:-0.01em;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  .wrap{max-width:1040px; margin:0 auto; padding:0 24px;}
+
+  .topbar{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:28px 0; border-bottom:1px solid var(--line);
+  }
+  .logo{font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem;}
+  .logo .mark{color:var(--gold);}
+  .nav a{
+    margin-left:28px; font-size:0.88rem; color:var(--paper);
+    text-decoration:none; opacity:0.75;
+  }
+  .nav a:hover{opacity:1;}
+
+  .hero{padding:100px 0 72px; position:relative;}
+  .ledger-lines{
+    position:absolute; inset:0; top:100px; bottom:auto; height:520px;
+    background-image:repeating-linear-gradient(to bottom, transparent, transparent 39px, var(--line) 40px);
+    pointer-events:none; opacity:0.5; z-index:0;
+  }
+  .hero-inner{position:relative; z-index:1; max-width:700px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem;
+    color:var(--gold); letter-spacing:0.08em; text-transform:uppercase;
+    margin-bottom:20px; display:block;
+  }
+  .hero h1{
+    font-size:clamp(2.2rem,5vw,3.4rem); font-weight:500; line-height:1.08;
+  }
+  .hero p.lede{
+    margin-top:24px; font-size:1.08rem; color:rgba(247,247,245,0.72);
+    max-width:560px;
+  }
+  .cta-row{margin-top:36px; display:flex; gap:16px; flex-wrap:wrap;}
+  .cta-primary{
+    background:var(--gold); color:var(--navy); font-weight:600;
+    padding:14px 30px; border-radius:2px; text-decoration:none; font-size:0.95rem;
+  }
+  .cta-secondary{
+    border:1px solid var(--line); color:var(--paper); padding:14px 30px;
+    border-radius:2px; text-decoration:none; font-size:0.95rem;
+  }
+
+  /* Services — ledger-style rows */
+  .services{padding:80px 0; border-top:1px solid var(--line);}
+  .services h2{font-size:1.8rem; font-weight:500; margin-bottom:8px;}
+  .services > p{color:rgba(247,247,245,0.6); margin-bottom:44px; max-width:560px;}
+  .row{
+    display:grid; grid-template-columns:60px 1fr 1fr; gap:24px;
+    padding:26px 0; border-top:1px solid var(--line); align-items:start;
+  }
+  .row:last-child{border-bottom:1px solid var(--line);}
+  .row .num{font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:0.9rem;}
+  .row h3{font-size:1.15rem; font-weight:500;}
+  .row p{color:rgba(247,247,245,0.65); font-size:0.94rem;}
+
+  /* Trust bar */
+  .trust{
+    display:flex; gap:48px; flex-wrap:wrap; padding:48px 0;
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  }
+  .trust .item .mono{font-size:1.6rem; color:var(--gold); display:block;}
+  .trust .item span.label{font-size:0.82rem; color:rgba(247,247,245,0.6);}
+
+  /* Demo form */
+  .demo{padding:80px 0; text-align:center;}
+  .demo h2{font-size:2rem; font-weight:500; margin-bottom:12px;}
+  .demo p{color:rgba(247,247,245,0.65); max-width:480px; margin:0 auto 32px;}
+  form.demoform{
+    max-width:440px; margin:0 auto; display:flex; flex-direction:column; gap:12px;
+  }
+  form.demoform input{
+    background:var(--navy-raise); border:1px solid var(--line); color:var(--paper);
+    padding:14px 16px; border-radius:3px; font-family:'Inter',sans-serif; font-size:0.95rem;
+  }
+  form.demoform input::placeholder{color:rgba(247,247,245,0.4);}
+  form.demoform button{
+    background:var(--gold); color:var(--navy); font-weight:600; border:none;
+    padding:14px 16px; border-radius:3px; font-size:0.95rem; cursor:pointer; margin-top:6px;
+  }
+  .confirm{display:none; color:var(--gold); margin-top:16px; font-size:0.9rem;}
+
+  footer{
+    border-top:1px solid var(--line); padding:36px 0; text-align:center;
+    color:rgba(247,247,245,0.45); font-size:0.82rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="topbar">
+    <div class="logo"><span class="mark">◆</span> Veteran Loan Servicing</div>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#demo">Request Demo</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div class="ledger-lines"></div>
+    <div class="hero-inner">
+      <span class="eyebrow">Institutional Servicing Infrastructure</span>
+      <h1>Commercial loan servicing built for institutional capital.</h1>
+      <p class="lede">Sub-servicing, default management, and compliance infrastructure for banks, credit funds, and alternative capital platforms — on one unified operating layer, not a patchwork of vendors.</p>
+      <div class="cta-row">
+        <a href="#demo" class="cta-primary">Request Platform Demo</a>
+        <a href="#services" class="cta-secondary">View Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="services" id="services">
+    <h2>What we service</h2>
+    <p>Four areas of institutional loan operations, consolidated under one contract enforcement and workout matrix.</p>
+
+    <div class="row">
+      <div class="num mono">01</div>
+      <h3>Sub-Servicing</h3>
+      <p>Commercial real estate and business loan portfolios — statement cycles, ACH collection and disbursement, full audit trails, aligned to NACHA operating guidelines.</p>
+    </div>
+    <div class="row">
+      <div class="num mono">02</div>
+      <h3>Default &amp; Workout Management</h3>
+      <p>Accelerated default tracking and structured mediation for non-performing accounts, with recovery workflows built to maximize net liquidation value.</p>
+    </div>
+    <div class="row">
+      <div class="num mono">03</div>
+      <h3>Compliance Infrastructure</h3>
+      <p>Corporate insurance compliance and portfolio-level reporting consolidated in one system, replacing fragmented vendor relationships.</p>
+    </div>
+    <div class="row">
+      <div class="num mono">04</div>
+      <h3>UCC Article 9 Enforcement</h3>
+      <p>In-house contract enforcement triggers automated remediation protocols and legal remedies the moment an asset falls out of compliance.</p>
+    </div>
+  </div>
+
+  <div class="trust">
+    <div class="item"><span class="mono">US-Based</span><span class="label">Headquartered in Edmond, OK</span></div>
+    <div class="item"><span class="mono">NACHA</span><span class="label">Aligned disbursement standards</span></div>
+    <div class="item"><span class="mono">Article 9</span><span class="label">UCC enforcement capability</span></div>
+  </div>
+
+  <div class="demo" id="demo">
+    <h2>Request a platform demo</h2>
+    <p>For institutional lenders, credit funds, and capital platforms evaluating a servicing partner.</p>
+    <form class="demoform" onsubmit="showConfirm(event)">
+      <input type="text" placeholder="Full name" required>
+      <input type="text" placeholder="Institution / fund name" required>
+      <input type="email" placeholder="Work email" required>
+      <button type="submit">Request Demo</button>
+    </form>
+    <div class="confirm" id="confirm">Thank you — we'll follow up to schedule your demo.</div>
+  </div>
+
+  <footer>© Veteran Loan Servicing. Institutional servicing partner for banks, credit funds, and alternative capital platforms.</footer>
+</div>
+
+<script>
+  function showConfirm(e){
+    e.preventDefault();
+    document.getElementById('confirm').style.display = 'block';
+    e.target.style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
