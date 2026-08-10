@@ -508,6 +508,9 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
   font-size: 0.75rem; color: var(--text-tertiary); max-width: 100%;
   line-height: 1.6; border-top: 1px solid var(--border-subtle); padding: 26px 0; text-align: left;
 }
+.footer-credit { font-size: 0.75rem; color: var(--text-tertiary); text-align: left; }
+.footer-credit a { color: var(--text-tertiary); text-decoration: underline; }
+.footer-credit a:hover { color: var(--text-secondary); }
 
 /* ==========================================================================
    Responsive breakpoints
