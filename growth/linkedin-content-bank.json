@@ -1,0 +1,61 @@
+{
+  "cadence_per_week": 3,
+  "posts": [
+    {
+      "id": "cre-vendor-patchwork",
+      "hooks": ["Most CRE loan portfolios aren't under-serviced.", "They're over-fragmented."],
+      "body": "Ledger in one system.\nCollections in another.\nInsurance certificates in a shared inbox.\nWorkout counsel on speed dial — after the damage is done.\n\nInstitutional capital doesn't lose money because people are lazy.\nIt loses time (and recoveries) in the handoffs.\n\nAt Veteran Loan Servicing we're building one operating layer for commercial real estate and business/commercial loans:\n• ACH collection + lender disbursement (NACHA-aligned)\n• Delinquency → workout tracking\n• Insurance compliance monitoring\n• UCC Article 9 enforcement triggers\n\nNot residential. Not consumer. B2B only.\n\nIf you run a credit fund or bank CRE book and this friction sounds familiar, I'm taking Early Partner conversations this month.",
+      "cta": "Comment \"demo\" or visit veteranloanservicing.com/request-demo",
+      "tags": ["CommercialRealEstate", "PrivateCredit", "LoanServicing"]
+    },
+    {
+      "id": "insurance-lapse",
+      "hooks": ["The quietest risk in a CRE portfolio isn't rate.", "It's an expired certificate of insurance."],
+      "body": "When insurance compliance lives in a broker portal + email threads, lapses get discovered late — usually when a claim or covenant test forces the issue.\n\nWe treat insurance monitoring as part of servicing, not an afterthought:\ntrack required coverage → alert on lapse risk → escalate before the asset is unprotected.\n\nIf your current stack can't answer \"which loans are out of compliance today?\" in one screen, that's a process gap — not a people gap.",
+      "cta": "Happy to show how we structure this for institutional books — DM me.",
+      "tags": ["CRE", "RiskManagement", "InsuranceCompliance"]
+    },
+    {
+      "id": "not-residential",
+      "hooks": ["Quick clarity:", "We don't service residential mortgages."],
+      "body": "Veteran Loan Servicing is an institutional B2B platform for:\n• Commercial real estate loans\n• Business / commercial loan portfolios\n\nBanks, credit funds, capital platforms.\n\nIf someone forwards you our site thinking \"VA loans\" or consumer mortgage — send them this post.\n\nScope matters. So does saying no.",
+      "cta": "Overview: veteranloanservicing.com",
+      "tags": ["B2B", "InstitutionalLending"]
+    },
+    {
+      "id": "early-partner",
+      "hooks": ["We're onboarding Early Partners — deliberately few."],
+      "body": "What you get:\n• Founder-direct access (not a ticket queue)\n• Platform configured around your portfolio\n• Input into reporting as we harden the stack\n\nWhat we ask:\n• A real commercial CRE or business loan book to service\n• Permission for an anonymized case study / reference once live\n\nIf you're evaluating a sub-servicer and want a partner who still picks up the phone, let's talk.",
+      "cta": "Book a walkthrough: veteranloanservicing.com/request-demo",
+      "tags": ["PrivateCredit", "SubServicing"]
+    },
+    {
+      "id": "ucc-article-9",
+      "hooks": ["Default is a process problem before it's a legal problem."],
+      "body": "UCC Article 9 remedies only help if your servicing stack notices breach early and documents the trail.\n\nWe wire enforcement triggers into the operating layer — so remediation isn't waiting on a quarterly report.\n\nFor funds buying or holding non-performing / special-situations CRE paper, that timing difference is the product.",
+      "cta": "More on our risk stack: veteranloanservicing.com/enterprise-risk-compliance",
+      "tags": ["UCC", "SpecialSituations", "CRE"]
+    },
+    {
+      "id": "nacha-audit",
+      "hooks": ["Lenders don't just want the remittance.", "They want the audit trail."],
+      "body": "ACH collection → monthly lender disbursement only works if every transaction is reconcilable.\n\nWe structure disbursement cycles around NACHA operating guidelines with a full trail — because institutional LPs and examiners ask the same question: \"show me.\"\n\nIf your current servicer can't produce that cleanly, it's a diligence risk waiting to happen.",
+      "cta": "See institutional services: veteranloanservicing.com/institutional-services",
+      "tags": ["NACHA", "LoanOperations", "CreditFunds"]
+    },
+    {
+      "id": "founder-note",
+      "hooks": ["Building in public (institutional edition)."],
+      "body": "I'm Robert Newark — founder of Veteran Loan Servicing in Edmond, OK.\n\nThesis: commercial loan portfolios deserve the same operating discipline as the capital that funds them — without bolting together five vendors and hoping the email chain holds.\n\nThis week I'm talking with credit teams evaluating sub-servicing for CRE / business loan books.\n\nIf that's you (or someone you trust), I'm easy to find.",
+      "cta": "veteranloanservicing.com/about",
+      "tags": ["Founder", "Edmond", "PrivateCredit"]
+    },
+    {
+      "id": "geo-oklahoma",
+      "hooks": ["US-based. Edmond, Oklahoma. Institutional clients nationwide."],
+      "body": "Location still matters for servicing partners:\n• Data residency expectations\n• Same-time-zone operating cadence\n• A real address on the contract\n\nWe're headquartered at 1019 Waterwood Pkwy, Ste C, Edmond, OK — and we service commercial portfolios across the United States.\n\nLocal footprint. National book.",
+      "cta": "NAP + overview on the site — built for AI and human due diligence alike.",
+      "tags": ["Oklahoma", "InstitutionalServices", "GEO"]
+    }
+  ]
+}

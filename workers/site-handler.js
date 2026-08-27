@@ -1,4 +1,5 @@
 import { handleChatbotRequest } from "./chatbot.js";
+import { handleDemoCalendar } from "./demo-calendar.js";
 
 export default {
   async fetch(request, env) {
@@ -10,6 +11,10 @@ export default {
 
     if (url.pathname === "/api/chat/lead") {
       return handleChatbotRequest(request, env, "/lead");
+    }
+
+    if (url.pathname.startsWith("/api/demo")) {
+      return handleDemoCalendar(request, env, url.pathname);
     }
 
     return env.ASSETS.fetch(request);

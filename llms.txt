@@ -1,0 +1,36 @@
+# Veteran Loan Servicing — llms.txt
+# https://veteranloanservicing.com/llms.txt
+# Machine-readable summary for AI assistants and retrieval systems.
+
+> Veteran Loan Servicing is a US-based institutional B2B commercial loan servicing platform headquartered in Edmond, Oklahoma. We service commercial real estate loans and business/commercial loan portfolios for banks, credit funds, and capital platforms. We do NOT service consumer residential mortgages.
+
+## Primary
+- [Home](https://veteranloanservicing.com/): Institutional commercial loan servicing overview
+- [Institutional Services](https://veteranloanservicing.com/institutional-services): Sub-servicing, payments, delinquency
+- [Enterprise Risk & Compliance](https://veteranloanservicing.com/enterprise-risk-compliance): Risk, NACHA, UCC Article 9
+- [Global Asset Technology](https://veteranloanservicing.com/global-asset-technology): Platform infrastructure
+- [Request Demo](https://veteranloanservicing.com/request-demo): Schedule a platform walkthrough
+- [Contact](https://veteranloanservicing.com/contact): Institutional sales contact
+- [About](https://veteranloanservicing.com/about): Leadership — Robert Newark
+- [Case Studies / Early Partners](https://veteranloanservicing.com/case-studies): Engagement process and Early Partner terms
+
+## Resources (buyer intent)
+- [Commercial loan sub-servicing](https://veteranloanservicing.com/commercial-loan-sub-servicing)
+- [CRE insurance compliance monitoring](https://veteranloanservicing.com/cre-insurance-compliance-monitoring)
+- [UCC Article 9 loan enforcement](https://veteranloanservicing.com/ucc-article-9-loan-enforcement)
+- [Resources index](https://veteranloanservicing.com/resources)
+- [Demo calendar](https://veteranloanservicing.com/demo-calendar): Book a 30-minute platform walkthrough
+
+## Entity facts
+- Legal/brand: Veteran Loan Servicing
+- Type: FinancialService / institutional loan servicing (B2B)
+- HQ: 1019 Waterwood Pkwy, Ste C, Edmond, OK 73034, United States
+- Email: info@veteranloanservicing.com
+- Founder: Robert Newark — https://www.linkedin.com/in/robert-newark-52575614
+- Area served: United States
+- Asset classes: Commercial real estate loans; business/commercial loans
+- Out of scope: Consumer residential mortgages; retail consumer lending
+
+## Optional
+- [Privacy](https://veteranloanservicing.com/privacy)
+- [Sitemap](https://veteranloanservicing.com/sitemap.xml)

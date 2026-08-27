@@ -1,0 +1,54 @@
+{
+  "slug": "commercial-loan-sub-servicing",
+  "navLabel": "Commercial Sub-Servicing",
+  "title": "Commercial Loan Sub-Servicing for Credit Funds & Banks | Veteran Loan Servicing",
+  "description": "Institutional commercial loan sub-servicing for CRE and business loan portfolios — ACH collection, lender disbursement, delinquency tracking, and audit trails.",
+  "eyebrow": "Resource · Institutional Servicing",
+  "h1": "Commercial loan sub-servicing built for institutional books",
+  "lede": "Credit funds and banks often inherit a patchwork: one ledger, another collections vendor, insurance in email. Sub-servicing should be one operating layer — for commercial real estate and business loans only.",
+  "about": ["Commercial loan sub-servicing", "CRE loan servicing", "Credit fund operations"],
+  "sections": [
+    {
+      "id": "who",
+      "heading": "Who this is for",
+      "paragraphs": [
+        "Portfolio managers, chief credit officers, and operations leads at credit funds, community banks, specialty lenders, and capital platforms who need a B2B sub-servicer — not a residential mortgage shop."
+      ],
+      "bullets": [
+        "Commercial real estate loan portfolios",
+        "Business and commercial loan books",
+        "Funds consolidating fragmented vendors"
+      ]
+    },
+    {
+      "id": "what",
+      "heading": "What sub-servicing includes",
+      "paragraphs": [
+        "Borrower payment collection via ACH, scheduled lender disbursement with reconcilable trails, statement cycles, delinquency monitoring, and escalation into workout when accounts break covenant or payment terms."
+      ]
+    },
+    {
+      "id": "why",
+      "heading": "Why institutions switch",
+      "paragraphs": [
+        "Handoffs between tools create blind spots. Examiners and LPs ask for the audit trail. A single servicing matrix shortens time-to-signal when a loan goes off-plan."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you service residential mortgages?",
+      "a": "No. Veteran Loan Servicing services commercial real estate and business/commercial loans only. We do not service consumer residential mortgages."
+    },
+    {
+      "q": "How do lender disbursements work?",
+      "a": "Borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle structured around NACHA operating guidelines, with a full audit trail."
+    },
+    {
+      "q": "Can you migrate an existing book?",
+      "a": "Yes. Engagements start with portfolio review and ledger migration with reconciliation before go-live."
+    }
+  ],
+  "ctaHeading": "Evaluate sub-servicing for your book",
+  "ctaBody": "Request a platform demo tailored to your CRE or business loan portfolio."
+}

@@ -104,7 +104,7 @@
       </div>
       <span class="eyebrow">Contact Institutional Sales</span>
       <h1 id="contact-hero-heading">Talk to Our <span class="highlight">Servicing Team</span></h1>
-      <p class="hero-desc-1">Whether you have a quick question or want to discuss a specific portfolio, reach us directly below.</p>
+      <p class="hero-desc-1">Whether you have a quick question or want to discuss a specific portfolio, reach us directly below — or <a class="inline-link" data-booking-cta href="mailto:info@veteranloanservicing.com?subject=Schedule%20a%20Platform%20Demo">book a call</a>.</p>
     </div>
   </section>
 
@@ -112,7 +112,7 @@
     <div class="container split-layout">
       <div class="form-panel" style="margin:0;">
         <h2 id="contact-form-heading" style="font-size:1.4rem; text-align:left;">Send Us a Message</h2>
-        <form id="contact-form">
+        <form id="contact-form" data-lead-form data-source="contact">
           <div class="form-row">
             <div class="form-group">
               <label for="contact-name">Full Name</label>
@@ -142,7 +142,7 @@
             <textarea id="contact-message" name="message" rows="5" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
-          <p class="form-foot-note">Submitting opens your email client with your details pre-filled to info@veteranloanservicing.com.</p>
+          <p class="form-foot-note">Submitted securely to our team. If the network fails, your email client opens as a backup.</p>
         </form>
       </div>
       <div class="sidebar-panel">
@@ -151,26 +151,11 @@
         <p style="font-size:0.9rem; margin-bottom:16px;">1019 Waterwood Pkwy, Ste C<br>Edmond, OK 73034</p>
         <a class="footer-email" href="mailto:info@veteranloanservicing.com">info@veteranloanservicing.com</a>
         <ul class="bullet-list" style="margin-top:20px;">
-          <li>Prefer a scheduled walkthrough? <a href="/request-demo" class="inline-link">Request a demo</a> instead.</li>
+          <li>Prefer a scheduled walkthrough? <a href="/request-demo" class="inline-link">Request a demo</a> or <a class="inline-link" data-booking-cta href="mailto:info@veteranloanservicing.com?subject=Schedule%20a%20Platform%20Demo">book a call</a>.</li>
         </ul>
       </div>
     </div>
   </section>
-
-  <script>
-    document.getElementById("contact-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      var name = document.getElementById("contact-name").value;
-      var company = document.getElementById("contact-company").value;
-      var email = document.getElementById("contact-email").value;
-      var phone = document.getElementById("contact-phone").value;
-      var subject = document.getElementById("contact-subject").value || "Website Contact Inquiry";
-      var message = document.getElementById("contact-message").value;
-      var body = "Name: " + name + "\nCompany: " + company + "\nEmail: " + email + "\nPhone: " + phone +
-        "\n\nMessage:\n" + message;
-      window.location.href = "mailto:info@veteranloanservicing.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    });
-  </script>
 
 </main>
 
@@ -228,6 +213,8 @@
   </div>
 </footer>
 <script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/site-config.js"></script>
+<script src="/assets/js/lead-form.js" defer></script>
 <script
   src="https://site-chatbot-assets.pages.dev/widget.js"
   data-worker-url="/api/chat"

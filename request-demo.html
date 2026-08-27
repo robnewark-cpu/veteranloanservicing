@@ -104,16 +104,20 @@
       </div>
       <span class="eyebrow">Institutional Demo</span>
       <h1 id="demo-hero-heading">See the Platform Behind the <span class="highlight">Portfolio</span></h1>
-      <p class="hero-desc-1">Tell us a bit about your portfolio and we'll schedule a guided walkthrough of the servicing architecture, compliance controls, and reporting tools.</p>
+      <p class="hero-desc-1">Tell us a bit about your portfolio — or pick an open slot on the demo calendar — and we'll walk through the servicing architecture, compliance controls, and reporting tools.</p>
+      <p style="margin-top:20px;">
+        <a class="btn btn-primary" href="/demo-calendar">Book on the demo calendar</a>
+        <a class="btn btn-ghost" href="#demo-form-heading" style="margin-left:10px;">Or send details below</a>
+      </p>
     </div>
   </section>
 
   <section aria-labelledby="demo-form-heading">
     <div class="container" style="max-width: 640px;">
       <div class="form-panel">
-        <h1 id="demo-form-heading" style="font-size:1.6rem;">Request Platform Demo</h1>
+        <h2 id="demo-form-heading" style="font-size:1.6rem;">Request Platform Demo</h2>
         <p class="form-intro">Fields marked required help us route your request to the right person on our team.</p>
-        <form id="demo-form">
+        <form id="demo-form" data-lead-form data-source="request-demo">
           <div class="form-row">
             <div class="form-group">
               <label for="demo-name">Full Name</label>
@@ -156,28 +160,11 @@
             <textarea id="demo-message" name="message" rows="4"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Request Platform Demo</button>
-          <p class="form-foot-note">Submitting opens your email client with your details pre-filled to info@veteranloanservicing.com.</p>
+          <p class="form-foot-note">Submitted securely to our team. If the network fails, your email client opens as a backup.</p>
         </form>
       </div>
     </div>
   </section>
-
-  <script>
-    document.getElementById("demo-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      var name = document.getElementById("demo-name").value;
-      var company = document.getElementById("demo-company").value;
-      var email = document.getElementById("demo-email").value;
-      var phone = document.getElementById("demo-phone").value;
-      var portfolioType = document.getElementById("demo-portfolio-type").value;
-      var size = document.getElementById("demo-size").value;
-      var message = document.getElementById("demo-message").value;
-      var subject = "Platform Demo Request - " + company;
-      var body = "Name: " + name + "\nCompany/Fund: " + company + "\nEmail: " + email + "\nPhone: " + phone +
-        "\nPortfolio Type: " + portfolioType + "\nApproximate Size: " + size + "\n\nMessage:\n" + message;
-      window.location.href = "mailto:info@veteranloanservicing.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    });
-  </script>
 
 </main>
 
@@ -235,6 +222,8 @@
   </div>
 </footer>
 <script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/site-config.js"></script>
+<script src="/assets/js/lead-form.js" defer></script>
 <script
   src="https://site-chatbot-assets.pages.dev/widget.js"
   data-worker-url="/api/chat"

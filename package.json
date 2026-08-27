@@ -7,7 +7,10 @@
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "deploy:chatbot": "wrangler deploy --config workers/site-chatbot/wrangler.jsonc",
-    "validate": "node scripts/validate-site.mjs"
+    "validate": "node scripts/validate-site.mjs",
+    "build:resources": "node scripts/build-resource-pages.mjs",
+    "growth:outreach": "node scripts/generate-outreach.mjs",
+    "growth:linkedin": "node scripts/generate-linkedin-week.mjs"
   },
   "devDependencies": {
     "node-html-parser": "^6.1.13",

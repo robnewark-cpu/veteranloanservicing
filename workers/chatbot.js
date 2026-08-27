@@ -83,7 +83,13 @@ export async function handleChatbotRequest(request, env, pathname = "/") {
   }
 
   if (isLead) {
-    return handleLead(await request.json(), origin);
+    let leadBody;
+    try {
+      leadBody = await request.json();
+    } catch {
+      return json({ error: "Invalid JSON" }, 400, origin);
+    }
+    return handleLead(leadBody, origin, env);
   }
 
   let body;
@@ -127,11 +133,53 @@ export async function handleChatbotRequest(request, env, pathname = "/") {
   return json({ reply }, 200, origin);
 }
 
-function handleLead(data, origin) {
+async function handleLead(data, origin, env = {}) {
   if (!data?.name || !data?.email) {
     return json({ error: "name and email are required" }, 400, origin);
   }
-  return json({ ok: true, id: crypto.randomUUID() }, 200, origin);
+
+  const id = crypto.randomUUID();
+  console.log("[lead]", JSON.stringify({ id, ...data }));
+
+  if (env.RESEND_API_KEY) {
+    try {
+      await notifyLeadEmail(env, data, id);
+    } catch (err) {
+      console.error("[lead] notify failed:", err.message);
+    }
+  }
+
+  return json({ ok: true, id }, 200, origin);
+}
+
+async function notifyLeadEmail(env, data, id) {
+  const to = env.TO_EMAIL || "info@veteranloanservicing.com";
+  const from = env.FROM_EMAIL || "leads@veteranloanservicing.com";
+  const subject = `New VLS lead — ${data.company || data.name} (${data.source || "website"})`;
+  const text = [
+    `Lead ID: ${id}`,
+    `Name: ${data.name}`,
+    `Company: ${data.company || "—"}`,
+    `Email: ${data.email}`,
+    `Phone: ${data.phone || "—"}`,
+    `Portfolio: ${data.portfolio_type || "—"} / ${data.portfolio_size || "—"}`,
+    `Page: ${data.page || "—"}`,
+    `Source: ${data.source || "—"}`,
+    "",
+    data.message || "",
+  ].join("\n");
+
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${env.RESEND_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ from, to: [to], subject, text }),
+  });
+  if (!res.ok) {
+    throw new Error(`Resend ${res.status}: ${await res.text()}`);
+  }
 }
 
 async function callAnthropic(apiKey, systemPrompt, messages) {

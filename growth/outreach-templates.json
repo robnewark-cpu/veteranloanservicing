@@ -1,0 +1,39 @@
+{
+  "sender": {
+    "name": "Robert Newark",
+    "company": "Veteran Loan Servicing",
+    "role": "Founder",
+    "site": "https://veteranloanservicing.com",
+    "demo": "https://veteranloanservicing.com/request-demo",
+    "email": "info@veteranloanservicing.com"
+  },
+  "linkedin_connection": {
+    "default": "Hi {{first_name}} — I work with {{company_type_label}} on commercial loan sub-servicing (CRE + business loans, not residential). Building something practical at Veteran Loan Servicing and thought it might be relevant given your role at {{company}}. Happy to connect either way.",
+    "warm": "Hi {{first_name}} — {{warm_intro}}. I lead Veteran Loan Servicing (institutional CRE / business loan servicing out of Edmond, OK). Would value connecting and swapping notes when useful."
+  },
+  "linkedin_message": {
+    "default": "Hi {{first_name}},\n\nQuick note — Veteran Loan Servicing helps {{company_type_label}} run commercial loan portfolios on one operating layer (payments, delinquency, insurance compliance, UCC Article 9 remedies) instead of a vendor patchwork.\n\nWe're onboarding a small Early Partner cohort with founder-direct access. If {{company}} is evaluating sub-servicing or cleanup on fragmented CRE/business books, I can walk through how we run an engagement in 20 minutes.\n\nDemo page: {{demo}}\nOr reply here and I'll send times.\n\n— Robert",
+    "warm": "Hi {{first_name}},\n\n{{warm_intro}}.\n\nI wanted to reach out directly: Veteran Loan Servicing is taking on a few Early Partner portfolios (commercial CRE / business loans only). Early partners get founder-direct access and input on reporting — in exchange for a candid reference once we're live.\n\nIf helpful for {{company}}, here's the short overview: {{demo}}\nHappy to keep it informal.\n\n— Robert"
+  },
+  "email": {
+    "subject": "{{company}} — commercial loan sub-servicing (Early Partner)",
+    "body": "Hi {{first_name}},\n\nI'm Robert Newark, founder of Veteran Loan Servicing. We provide institutional sub-servicing for commercial real estate and business/commercial loan portfolios — ACH collection/disbursement, delinquency/workout tracking, insurance compliance monitoring, and UCC Article 9 enforcement triggers.\n\nWe do not service residential mortgages.\n\nWe're selectively onboarding Early Partners with direct founder access. If {{company}} has a book that is fragmented across vendors or needs a cleaner servicing stack, I'd welcome a short walkthrough.\n\nRequest a demo: {{demo}}\nOr reply with a few times that work.\n\nBest,\nRobert Newark\nVeteran Loan Servicing\n{{email}}\n{{site}}"
+  },
+  "company_type_labels": {
+    "credit_fund": "credit funds",
+    "bank": "banks",
+    "capital_platform": "capital platforms",
+    "lender": "specialty lenders",
+    "counsel": "workout counsel",
+    "broker": "CRE brokers",
+    "default": "institutional lenders"
+  },
+  "warm_path_phrases": {
+    "mutual_connection": "Came across your work via {{detail}}",
+    "referral": "Was referred your way via {{detail}}",
+    "aegis_network": "Connecting through the Aegis / operator network",
+    "newark_law": "Connecting from adjacent work with Newark Law",
+    "prior_meeting": "Following up from {{detail}}",
+    "default": "Reaching out through a shared network"
+  }
+}
