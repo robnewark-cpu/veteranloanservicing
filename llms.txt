@@ -19,6 +19,7 @@
 - [CRE insurance compliance monitoring](https://veteranloanservicing.com/cre-insurance-compliance-monitoring)
 - [UCC Article 9 loan enforcement](https://veteranloanservicing.com/ucc-article-9-loan-enforcement)
 - [Resources index](https://veteranloanservicing.com/resources)
+- [Demo calendar](https://veteranloanservicing.com/demo-calendar): Book a 30-minute platform walkthrough
 
 ## Entity facts
 - Legal/brand: Veteran Loan Servicing

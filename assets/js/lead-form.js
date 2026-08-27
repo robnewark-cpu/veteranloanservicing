@@ -14,8 +14,13 @@
     document.querySelectorAll("[data-booking-cta]").forEach(function (el) {
       if (bookingUrl) {
         el.setAttribute("href", bookingUrl);
-        el.setAttribute("target", "_blank");
-        el.setAttribute("rel", "noopener noreferrer");
+        if (/^https?:\/\//i.test(bookingUrl)) {
+          el.setAttribute("target", "_blank");
+          el.setAttribute("rel", "noopener noreferrer");
+        } else {
+          el.removeAttribute("target");
+          el.removeAttribute("rel");
+        }
         el.hidden = false;
       } else {
         el.setAttribute(
@@ -43,7 +48,11 @@
     var bookLine = bookingUrl
       ? '<p style="margin-top:16px;"><a class="btn btn-primary" href="' +
         bookingUrl +
-        '" target="_blank" rel="noopener noreferrer">Book a time on the calendar</a></p>'
+        '"' +
+        (/^https?:\/\//i.test(bookingUrl)
+          ? ' target="_blank" rel="noopener noreferrer"'
+          : "") +
+        ">Book a time on the calendar</a></p>"
       : '<p style="margin-top:16px;">We will follow up by email shortly. Prefer to talk now? Reach us at <a href="mailto:' +
         contactEmail +
         '">' +

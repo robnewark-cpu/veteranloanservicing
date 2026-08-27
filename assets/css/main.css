@@ -462,6 +462,106 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
 .checkbox-label { font-size: 0.85rem; color: var(--text-secondary); text-transform: none; letter-spacing: normal; }
 .form-foot-note { font-size: 0.78rem; color: var(--text-tertiary); text-align: center; margin-top: 18px; }
 
+/* ---------- Demo calendar (Pulse-style slot picker) ---------- */
+.demo-cal-root { margin-bottom: 64px; }
+.demo-cal-layout {
+  display: grid;
+  grid-template-columns: minmax(17rem, 22rem) 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.demo-cal-aside, .demo-cal-list {
+  background: var(--gradient-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+}
+.demo-cal-kicker {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent-gold); margin-bottom: 6px;
+}
+.demo-cal-hint { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; }
+.demo-cal-error { color: var(--accent-red); font-size: 0.9rem; margin-top: 12px; }
+.demo-cal-month-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  margin: 18px 0 12px; gap: 8px;
+}
+.demo-cal-month-title { font-weight: 600; font-size: 0.95rem; }
+.demo-cal-nav-btn {
+  width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border-subtle);
+  background: var(--bg-primary); color: var(--text-primary); cursor: pointer; font-size: 1.2rem;
+}
+.demo-cal-nav-btn:hover { border-color: var(--accent-blue); }
+.demo-cal-grid {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;
+}
+.demo-cal-dow {
+  text-align: center; font-size: 0.7rem; color: var(--text-tertiary);
+  padding: 6px 0; font-weight: 600;
+}
+.demo-cal-day {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.demo-cal-day.empty { visibility: hidden; }
+.demo-cal-day:disabled { opacity: 0.35; cursor: default; }
+.demo-cal-day.has-slots {
+  font-weight: 700;
+}
+.demo-cal-day.has-slots::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  transform: translateX(-50%);
+}
+.demo-cal-day.is-today { border-color: var(--border-strong); }
+.demo-cal-day.is-selected {
+  background: var(--accent-blue);
+  color: #fff;
+}
+.demo-cal-day.is-selected.has-slots::after { background: #fff; }
+.demo-cal-clear {
+  margin-top: 14px;
+  background: none;
+  border: none;
+  color: var(--accent-blue-light);
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: left;
+  padding: 0;
+}
+.demo-cal-list-heading { font-size: 1.15rem; margin-bottom: 14px; }
+.demo-cal-slots { list-style: none; margin: 0; padding: 0; }
+.demo-cal-slot {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.demo-cal-slot:last-child { border-bottom: 0; }
+.demo-cal-slot strong { display: block; margin-bottom: 4px; }
+.demo-cal-slot span { font-size: 0.85rem; color: var(--text-secondary); }
+.demo-cal-slot.is-active { opacity: 1; }
+.demo-cal-form-wrap { margin-top: 28px; max-width: 640px; }
+
+@media (max-width: 900px) {
+  .demo-cal-layout { grid-template-columns: 1fr; }
+}
+
 /* ---------- FAQ / accordion ---------- */
 .faq-item { border-bottom: 1px solid var(--border-subtle); padding: 22px 0; }
 .faq-item summary { cursor: pointer; font-weight: 600; font-size: 1.02rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center; }

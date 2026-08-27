@@ -39,15 +39,15 @@ Outputs land in `growth/outbox/`.
 
 ## Site trust config
 
-Set your calendar URL in `assets/js/site-config.js`:
+Demo booking uses the Pulse-style calendar at `/demo-calendar` (not Calendly).
 
-```js
-bookingUrl: "https://calendly.com/YOUR_HANDLE/platform-demo"
-```
+Optional: persist booked slots across deploys with KV — see `workers/DEMO_BOOKINGS.md`.
 
-Optional worker secrets for lead email notify:
+Optional worker secrets for lead/demo email notify:
 
 ```bash
 wrangler secret put RESEND_API_KEY
 # optional vars: FROM_EMAIL, TO_EMAIL
 ```
+
+Default open times (edit in `workers/demo-calendar.js`): Mon–Fri 10:00 & 14:00 America/Chicago.
