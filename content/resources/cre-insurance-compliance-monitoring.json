@@ -1,0 +1,50 @@
+{
+  "slug": "cre-insurance-compliance-monitoring",
+  "navLabel": "Insurance Compliance",
+  "title": "CRE Insurance Compliance Monitoring for Loan Portfolios | Veteran Loan Servicing",
+  "description": "Monitor required insurance coverage across commercial real estate loan portfolios — lapse alerts, certificate tracking, and servicing-integrated compliance.",
+  "eyebrow": "Resource · Risk & Compliance",
+  "h1": "CRE insurance compliance monitoring inside servicing",
+  "lede": "Expired certificates are a quiet portfolio risk. When coverage tracking lives in broker portals and inboxes, lapses surface too late — at claim time or covenant review.",
+  "about": ["CRE insurance compliance", "Certificate tracking", "Commercial loan risk"],
+  "sections": [
+    {
+      "id": "problem",
+      "heading": "The compliance gap",
+      "paragraphs": [
+        "Servicing teams can remittance-perfect a book and still miss that a policy lapsed last month. Insurance oversight belongs in the same operating layer as payments and delinquency — not a side spreadsheet."
+      ]
+    },
+    {
+      "id": "approach",
+      "heading": "How we structure monitoring",
+      "paragraphs": [
+        "Required coverage inventory per asset, ongoing tracking of certificates, automated alerts when a policy approaches lapse or falls out of compliance, and escalation paths before the collateral is unprotected."
+      ],
+      "bullets": [
+        "Portfolio-level view of coverage status",
+        "Alerts tied to servicing workflows",
+        "Reporting suitable for credit and risk committees"
+      ]
+    },
+    {
+      "id": "fit",
+      "heading": "Built for institutional CRE",
+      "paragraphs": [
+        "Designed for commercial real estate and business/commercial loan portfolios — not consumer home insurance products."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is insurance monitoring separate from servicing?",
+      "a": "No. We treat corporate insurance compliance as part of the servicing operating matrix so gaps are visible alongside payment and delinquency status."
+    },
+    {
+      "q": "Who receives lapse alerts?",
+      "a": "Escalation is configured with your credit/ops team during onboarding so the right owners are notified before coverage fails."
+    }
+  ],
+  "ctaHeading": "See insurance monitoring on a live walkthrough",
+  "ctaBody": "We'll show how coverage status appears alongside the rest of the servicing stack."
+}

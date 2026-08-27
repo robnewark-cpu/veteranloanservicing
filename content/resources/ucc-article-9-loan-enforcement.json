@@ -1,0 +1,50 @@
+{
+  "slug": "ucc-article-9-loan-enforcement",
+  "navLabel": "UCC Article 9",
+  "title": "UCC Article 9 Enforcement in Commercial Loan Servicing | Veteran Loan Servicing",
+  "description": "How UCC Article 9 remedies connect to commercial loan servicing — early breach detection, documented trails, and enforcement triggers for institutional portfolios.",
+  "eyebrow": "Resource · Enforcement",
+  "h1": "UCC Article 9 enforcement starts in the servicing layer",
+  "lede": "Remedies only help if breach is noticed early and the trail is clean. For special-situations and CRE books, timing is the product — not the lawsuit after the fact.",
+  "about": ["UCC Article 9", "Commercial loan enforcement", "Special situations servicing"],
+  "sections": [
+    {
+      "id": "timing",
+      "heading": "Default is a process problem first",
+      "paragraphs": [
+        "When delinquency and covenant signals live in quarterly packs, workout counsel arrives late. Wiring enforcement triggers into servicing shortens the gap between missed payment and structured remediation."
+      ]
+    },
+    {
+      "id": "stack",
+      "heading": "What we operationalize",
+      "paragraphs": [
+        "Delinquency tracking from first miss through structured recovery workflows, documentation suitable for counsel, and Article 9-aware escalation where applicable on commercial (non-consumer) collateral structures."
+      ],
+      "bullets": [
+        "Early signal → remediation protocol",
+        "Audit-ready event history",
+        "Coordination path for workout counsel"
+      ]
+    },
+    {
+      "id": "scope",
+      "heading": "Scope boundaries",
+      "paragraphs": [
+        "We operate as an institutional B2B servicing platform for commercial real estate and business/commercial loans. We do not service consumer residential mortgages or retail lending products."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you provide legal advice?",
+      "a": "No. We operate servicing and enforcement-trigger workflows. Legal strategy remains with your counsel; we provide the operational trail and escalation timing."
+    },
+    {
+      "q": "Is this only for non-performing loans?",
+      "a": "Performing books benefit from early detection. Special-situations and NPL portfolios benefit most from tight breach-to-action timing."
+    }
+  ],
+  "ctaHeading": "Map enforcement triggers to your book",
+  "ctaBody": "Request a demo focused on delinquency, workout, and documentation flows."
+}

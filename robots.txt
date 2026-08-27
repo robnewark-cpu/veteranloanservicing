@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.veteranloanservicing.com/sitemap.xml
+# AI / LLM retrieval hints
+Allow: /llms.txt
+
+Sitemap: https://veteranloanservicing.com/sitemap.xml

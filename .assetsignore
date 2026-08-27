@@ -3,6 +3,8 @@ node_modules
 .wrangler
 scripts
 workers
+content
+growth
 package.json
 package-lock.json
 wrangler.jsonc

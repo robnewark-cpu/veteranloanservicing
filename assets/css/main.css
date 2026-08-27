@@ -441,6 +441,8 @@ p { color: var(--text-secondary); }
   background: var(--gradient-panel); border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg); padding: 48px;
 }
+.form-success { text-align: center; padding: 8px 0 4px; }
+.form-success[hidden], form[hidden] { display: none !important; }
 .form-panel h1, .form-panel h2 { text-align: center; }
 .form-panel > p.form-intro { text-align: center; color: var(--text-secondary); margin: 0 auto 32px auto; max-width: 520px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }

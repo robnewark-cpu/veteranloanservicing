@@ -159,7 +159,7 @@ if (existsSync(wranglerPath)) {
   }
 }
 
-for (const required of ["sitemap.xml", "robots.txt", "_headers", "_redirects"]) {
+for (const required of ["sitemap.xml", "robots.txt", "_headers", "_redirects", "llms.txt"]) {
   if (!existsSync(join(ROOT, required))) {
     fail(required, "Required file is missing.");
   }
