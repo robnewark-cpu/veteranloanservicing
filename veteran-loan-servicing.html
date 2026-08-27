@@ -3,9 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veteran Loan Servicing — Institutional Commercial Loan Servicing</title>
+<title>Institutional Commercial Loan Servicing | Veteran Loan Servicing</title>
+<meta name="description" content="Commercial loan servicing built for institutional capital — sub-servicing, default management, and compliance infrastructure for banks, credit funds, and capital platforms.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://veteranloanservicing.com/veteran-loan-servicing">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Veteran Loan Servicing">
+<meta property="og:url" content="https://veteranloanservicing.com/veteran-loan-servicing">
+<meta property="og:title" content="Institutional Commercial Loan Servicing | Veteran Loan Servicing">
+<meta property="og:description" content="Sub-servicing, default management, and compliance infrastructure for banks, credit funds, and alternative capital platforms.">
+<meta property="og:image" content="https://veteranloanservicing.com/assets/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F1B2D">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "@id": "https://veteranloanservicing.com/#organization",
+  "name": "Veteran Loan Servicing",
+  "url": "https://veteranloanservicing.com/",
+  "description": "Institutional B2B commercial loan servicing for banks, credit funds, and capital platforms.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1019 Waterwood Pkwy, Ste C",
+    "addressLocality": "Edmond",
+    "addressRegion": "OK",
+    "postalCode": "73034",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "institutional sales",
+    "email": "info@veteranloanservicing.com",
+    "areaServed": "United States"
+  }
+}
+</script>
 <style>
   :root{
     --navy:#0F1B2D;
@@ -29,7 +66,7 @@
     display:flex; justify-content:space-between; align-items:center;
     padding:28px 0; border-bottom:1px solid var(--line);
   }
-  .logo{font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem;}
+  .logo{font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem; text-decoration:none; color:var(--paper);}
   .logo .mark{color:var(--gold);}
   .nav a{
     margin-left:28px; font-size:0.88rem; color:var(--paper);
@@ -66,7 +103,6 @@
     border-radius:2px; text-decoration:none; font-size:0.95rem;
   }
 
-  /* Services — ledger-style rows */
   .services{padding:80px 0; border-top:1px solid var(--line);}
   .services h2{font-size:1.8rem; font-weight:500; margin-bottom:8px;}
   .services > p{color:rgba(247,247,245,0.6); margin-bottom:44px; max-width:560px;}
@@ -79,7 +115,6 @@
   .row h3{font-size:1.15rem; font-weight:500;}
   .row p{color:rgba(247,247,245,0.65); font-size:0.94rem;}
 
-  /* Trust bar */
   .trust{
     display:flex; gap:48px; flex-wrap:wrap; padding:48px 0;
     border-top:1px solid var(--line); border-bottom:1px solid var(--line);
@@ -87,7 +122,6 @@
   .trust .item .mono{font-size:1.6rem; color:var(--gold); display:block;}
   .trust .item span.label{font-size:0.82rem; color:rgba(247,247,245,0.6);}
 
-  /* Demo form */
   .demo{padding:80px 0; text-align:center;}
   .demo h2{font-size:2rem; font-weight:500; margin-bottom:12px;}
   .demo p{color:rgba(247,247,245,0.65); max-width:480px; margin:0 auto 32px;}
@@ -103,11 +137,18 @@
     background:var(--gold); color:var(--navy); font-weight:600; border:none;
     padding:14px 16px; border-radius:3px; font-size:0.95rem; cursor:pointer; margin-top:6px;
   }
-  .confirm{display:none; color:var(--gold); margin-top:16px; font-size:0.9rem;}
+  .form-note{font-size:0.82rem; color:rgba(247,247,245,0.5); margin-top:8px;}
 
   footer{
     border-top:1px solid var(--line); padding:36px 0; text-align:center;
     color:rgba(247,247,245,0.45); font-size:0.82rem;
+  }
+  footer a{color:var(--gold);}
+
+  @media (max-width:720px){
+    .row{grid-template-columns:40px 1fr; }
+    .row h3{grid-column:2;}
+    .row p{grid-column:2;}
   }
 </style>
 </head>
@@ -115,21 +156,23 @@
 
 <div class="wrap">
   <div class="topbar">
-    <div class="logo"><span class="mark">◆</span> Veteran Loan Servicing</div>
-    <nav class="nav">
+    <a href="/" class="logo"><span class="mark">◆</span> Veteran Loan Servicing</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/">Main Site</a>
       <a href="#services">Services</a>
-      <a href="#demo">Request Demo</a>
+      <a href="/request-demo">Request Demo</a>
+      <a href="/contact">Contact</a>
     </nav>
   </div>
 
   <div class="hero">
-    <div class="ledger-lines"></div>
+    <div class="ledger-lines" aria-hidden="true"></div>
     <div class="hero-inner">
       <span class="eyebrow">Institutional Servicing Infrastructure</span>
       <h1>Commercial loan servicing built for institutional capital.</h1>
       <p class="lede">Sub-servicing, default management, and compliance infrastructure for banks, credit funds, and alternative capital platforms — on one unified operating layer, not a patchwork of vendors.</p>
       <div class="cta-row">
-        <a href="#demo" class="cta-primary">Request Platform Demo</a>
+        <a href="/request-demo" class="cta-primary">Request Platform Demo</a>
         <a href="#services" class="cta-secondary">View Services</a>
       </div>
     </div>
@@ -170,29 +213,39 @@
   <div class="demo" id="demo">
     <h2>Request a platform demo</h2>
     <p>For institutional lenders, credit funds, and capital platforms evaluating a servicing partner.</p>
-    <form class="demoform" onsubmit="showConfirm(event)">
-      <input type="text" placeholder="Full name" required>
-      <input type="text" placeholder="Institution / fund name" required>
-      <input type="email" placeholder="Work email" required>
+    <form class="demoform" id="legacy-demo-form">
+      <input type="text" id="legacy-name" name="name" placeholder="Full name" required>
+      <input type="text" id="legacy-company" name="company" placeholder="Institution / fund name" required>
+      <input type="email" id="legacy-email" name="email" placeholder="Work email" required>
       <button type="submit">Request Demo</button>
+      <p class="form-note">Submitting opens your email client with details pre-filled to info@veteranloanservicing.com.</p>
     </form>
-    <div class="confirm" id="confirm">
-      Thank you — we'll follow up to schedule your demo.<br><br>
-      <a href="https://veteranloanservicing.com" style="color:var(--gold); text-decoration:underline;" target="_blank" rel="noopener">Visit veteranloanservicing.com →</a><br><br>
-      <a href="mailto:robert@veteranloanservicing.com" style="color:rgba(247,247,245,0.6); text-decoration:underline; font-size:0.85rem;">Or email Robert directly: robert@veteranloanservicing.com</a>
-    </div>
   </div>
 
-  <footer>© Veteran Loan Servicing. Institutional servicing partner for banks, credit funds, and alternative capital platforms.</footer>
+  <footer>
+    <p>© 2026 Veteran Loan Servicing · <a href="/">veteranloanservicing.com</a> · <a href="mailto:info@veteranloanservicing.com">info@veteranloanservicing.com</a></p>
+    <p style="margin-top:12px;">1019 Waterwood Pkwy, Ste C, Edmond, OK 73034</p>
+  </footer>
 </div>
 
 <script>
-  function showConfirm(e){
+  document.getElementById("legacy-demo-form").addEventListener("submit", function (e) {
     e.preventDefault();
-    document.getElementById('confirm').style.display = 'block';
-    e.target.style.display = 'none';
-  }
+    var name = document.getElementById("legacy-name").value;
+    var company = document.getElementById("legacy-company").value;
+    var email = document.getElementById("legacy-email").value;
+    var subject = "Platform Demo Request - " + company;
+    var body = "Name: " + name + "\nCompany/Fund: " + company + "\nEmail: " + email + "\n\nSubmitted from: /veteran-loan-servicing";
+    window.location.href = "mailto:info@veteranloanservicing.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
 </script>
-
+<script
+  src="https://site-chatbot-assets.pages.dev/widget.js"
+  data-worker-url="/api/chat"
+  data-site="vls"
+  data-name="Veteran Loan Servicing"
+  data-accent="#0F1B2D"
+  data-greeting="Hi, I can help point you to the right person on our team. What can I help you with today?"
+></script>
 </body>
 </html>

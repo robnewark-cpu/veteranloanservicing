@@ -2,6 +2,7 @@ node_modules
 .git
 .wrangler
 scripts
+workers
 package.json
 package-lock.json
 wrangler.jsonc

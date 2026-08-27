@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
+    "deploy:chatbot": "wrangler deploy --config workers/site-chatbot/wrangler.jsonc",
     "validate": "node scripts/validate-site.mjs"
   },
   "devDependencies": {
