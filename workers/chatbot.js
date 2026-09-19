@@ -40,7 +40,7 @@ CRITICAL FACTS — always follow these:
 - Headquarters: 1019 Waterwood Pkwy, Ste C, Edmond, OK 73034. We serve institutional clients across the United States.
 - Contact email: info@veteranloanservicing.com
 - Demo requests: direct visitors to the Request Platform Demo page at /request-demo
-- Solution pages: /institutional-services, /enterprise-risk-compliance, /global-asset-technology, /case-studies, /trust, /due-diligence, /founder
+- Solution pages: /institutional-services, /servicing, /enterprise-risk-compliance, /global-asset-technology, /case-studies, /trust, /due-diligence, /founder, /get-started
 
 Your role: help visitors understand our institutional servicing platform and point them to the right next step. Be professional, concise, and accurate. Never claim we service residential mortgages or consumer home loans.`,
     fallback: vlsFallback,
@@ -238,6 +238,12 @@ function vlsFallback(question) {
   }
   if (/due diligence|diligence|procurement|vendor review|package|investor/.test(q)) {
     return "Our Due Diligence Center at /due-diligence covers operational, technology, compliance, vendor, and investor due diligence — and you can request a due-diligence package there to answer most questions before a call.";
+  }
+  if (/board|onboard|transfer|migrat|collection|default|workout|escrow|reporting|document|special asset|servicing operation/.test(q)) {
+    return "Our Servicing Operations hub at /servicing covers boarding, portfolio transfers, payment/ACH processing, borrower communications, escrow, collections, default administration, investor reporting, document management, and special assets — each with its process, controls, reporting, and FAQs.";
+  }
+  if (/pricing|proposal|quote|cost|assessment|get started/.test(q)) {
+    return "You can start any request at /get-started — request pricing, a servicing proposal, a portfolio review, an executive consultation, a due-diligence package, or a loan portfolio assessment.";
   }
   if (/demo|schedule|walkthrough/.test(q)) {
     return "You can request a guided platform demo at /request-demo — we'll tailor the walkthrough to your fund's asset composition.";

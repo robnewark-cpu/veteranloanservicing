@@ -1,86 +1,17 @@
-#!/usr/bin/env node
-/**
- * Renders buyer-intent resource pages from content/resources/*.json
- * using a shared institutional chrome (nav/footer/schema).
- */
-import { readFileSync, writeFileSync, readdirSync, mkdirSync } from "node:fs";
-import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
-const CONTENT = join(ROOT, "content", "resources");
-const SERVICING = join(ROOT, "content", "servicing");
-
-function esc(s) {
-  return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-function render(page) {
-  const faqLd = page.faqs?.length
-    ? `<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": ${JSON.stringify(
-    page.faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-    null,
-    2
-  )}
-}
-</script>`
-    : "";
-
-  const sections = (page.sections || [])
-    .map(
-      (s) => `
-  <section class="section-border-top" aria-labelledby="${esc(s.id)}">
-    <div class="container" style="max-width:820px;">
-      <h2 id="${esc(s.id)}">${esc(s.heading)}</h2>
-      ${(s.paragraphs || []).map((p) => `<p class="body-copy" style="margin-top:14px;">${p}</p>`).join("")}
-      ${
-        s.bullets
-          ? `<ul class="bullet-list" style="margin-top:18px;">${s.bullets
-              .map((b) => `<li>${b}</li>`)
-              .join("")}</ul>`
-          : ""
-      }
-    </div>
-  </section>`
-    )
-    .join("\n");
-
-  const faqs = (page.faqs || [])
-    .map(
-      (f) => `
-      <details class="faq-item">
-        <summary>${esc(f.q)}</summary>
-        <p>${esc(f.a)}</p>
-      </details>`
-    )
-    .join("");
-
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${esc(page.title)}</title>
-<meta name="description" content="${esc(page.description)}">
+<title>Investor Reporting | Lender &amp; LP Portfolio Reporting | Veteran Loan Servicing</title>
+<meta name="description" content="Investor and lender reporting for commercial loan portfolios: disbursement trails, delinquency status, and reconcilable activity that supports LP and examiner review.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://veteranloanservicing.com/${esc(page.slug)}">
+<link rel="canonical" href="https://veteranloanservicing.com/investor-reporting">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Veteran Loan Servicing">
-<meta property="og:url" content="https://veteranloanservicing.com/${esc(page.slug)}">
-<meta property="og:title" content="${esc(page.title)}">
-<meta property="og:description" content="${esc(page.description)}">
+<meta property="og:url" content="https://veteranloanservicing.com/investor-reporting">
+<meta property="og:title" content="Investor Reporting | Lender &amp; LP Portfolio Reporting | Veteran Loan Servicing">
+<meta property="og:description" content="Investor and lender reporting for commercial loan portfolios: disbursement trails, delinquency status, and reconcilable activity that supports LP and examiner review.">
 <meta property="og:image" content="https://veteranloanservicing.com/assets/images/og-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#05070d">
@@ -96,12 +27,12 @@ function render(page) {
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": ${JSON.stringify(page.h1)},
-  "description": ${JSON.stringify(page.description)},
+  "headline": "Reporting your LPs and examiners can rely on",
+  "description": "Investor and lender reporting for commercial loan portfolios: disbursement trails, delinquency status, and reconcilable activity that supports LP and examiner review.",
   "author": { "@type": "Organization", "name": "Veteran Loan Servicing" },
   "publisher": { "@id": "https://veteranloanservicing.com/#organization" },
-  "mainEntityOfPage": "https://veteranloanservicing.com/${page.slug}",
-  "about": ${JSON.stringify(page.about || [])}
+  "mainEntityOfPage": "https://veteranloanservicing.com/investor-reporting",
+  "about": ["Investor reporting","Lender reporting","LP reporting","Portfolio reporting"]
 }
 </script>
 <script type="application/ld+json">
@@ -110,12 +41,43 @@ function render(page) {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veteranloanservicing.com/" },
-    { "@type": "ListItem", "position": 2, "name": ${JSON.stringify(page.sectionLabel || "Resources")}, "item": "https://veteranloanservicing.com/${page.sectionSlug || "resources"}" },
-    { "@type": "ListItem", "position": 3, "name": ${JSON.stringify(page.navLabel)}, "item": "https://veteranloanservicing.com/${page.slug}" }
+    { "@type": "ListItem", "position": 2, "name": "Servicing Operations", "item": "https://veteranloanservicing.com/servicing" },
+    { "@type": "ListItem", "position": 3, "name": "Investor Reporting", "item": "https://veteranloanservicing.com/investor-reporting" }
   ]
 }
 </script>
-${faqLd}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "Are the reports reconcilable?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Reporting is generated from the servicing ledger that runs collection and disbursement, so figures reconcile to the underlying transactions."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Can reporting support an LP or examiner review?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The underlying, retained transaction trail supports lender, LP, and examiner review on request."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Do you publish portfolio performance statistics on this site?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. We do not publish assets under management, loan counts, recovery rates, or other performance statistics; reporting is delivered to the lender for their own book."
+    }
+  }
+]
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -159,32 +121,71 @@ ${faqLd}
   <section class="hero" style="padding-bottom:20px;" aria-labelledby="resource-hero">
     <div class="container" style="max-width:820px;">
       <div class="breadcrumb">
-        <a href="/">Home</a><span>/</span><a href="/${page.sectionSlug || "resources"}">${esc(page.sectionLabel || "Resources")}</a><span>/</span><span aria-current="page">${esc(page.navLabel)}</span>
+        <a href="/">Home</a><span>/</span><a href="/servicing">Servicing Operations</a><span>/</span><span aria-current="page">Investor Reporting</span>
       </div>
-      <span class="eyebrow">${esc(page.eyebrow)}</span>
-      <h1 id="resource-hero">${esc(page.h1)}</h1>
-      <p class="hero-desc-1">${esc(page.lede)}</p>
+      <span class="eyebrow">Servicing Operations</span>
+      <h1 id="resource-hero">Reporting your LPs and examiners can rely on</h1>
+      <p class="hero-desc-1">Institutional capital does not just want a statement — it wants a reconcilable trail. Our reporting is built on the same ledger that runs collection and disbursement.</p>
     </div>
   </section>
-${sections}
-  ${
-    faqs
-      ? `<section class="section-border-top" aria-labelledby="faq-heading">
+
+  <section class="section-border-top" aria-labelledby="process">
+    <div class="container" style="max-width:820px;">
+      <h2 id="process">Process</h2>
+      <p class="body-copy" style="margin-top:14px;">Reporting is generated from the servicing ledger: loan status, payment activity, delinquency flags, and lender disbursement — reconciled rather than re-keyed.</p>
+      <ul class="bullet-list" style="margin-top:18px;"><li>Portfolio and loan-level status</li><li>Payment and disbursement activity</li><li>Delinquency and workout flags</li><li>Reconcilable underlying transaction trail</li></ul>
+    </div>
+  </section>
+
+  <section class="section-border-top" aria-labelledby="controls">
+    <div class="container" style="max-width:820px;">
+      <h2 id="controls">Controls</h2>
+      <p class="body-copy" style="margin-top:14px;">Because reporting is produced from the same ledger that runs payments, the numbers reconcile to the underlying transactions rather than to a separately maintained spreadsheet.</p>
+      
+    </div>
+  </section>
+
+  <section class="section-border-top" aria-labelledby="reporting">
+    <div class="container" style="max-width:820px;">
+      <h2 id="reporting">Reporting</h2>
+      <p class="body-copy" style="margin-top:14px;">Lenders receive regular portfolio reporting; the transaction trail behind it supports the 'show me' question examiners and LPs ask.</p>
+      
+    </div>
+  </section>
+
+  <section class="section-border-top" aria-labelledby="benefits">
+    <div class="container" style="max-width:820px;">
+      <h2 id="benefits">Benefits</h2>
+      <p class="body-copy" style="margin-top:14px;">Reporting that ties to the transaction trail is a diligence asset — it turns an LP or examiner request into a straightforward pull instead of a scramble.</p>
+      
+    </div>
+  </section>
+  <section class="section-border-top" aria-labelledby="faq-heading">
     <div class="container" style="max-width:820px;">
       <h2 id="faq-heading">FAQ</h2>
-      <div class="faq-list" style="margin-top:20px;">${faqs}
+      <div class="faq-list" style="margin-top:20px;">
+      <details class="faq-item">
+        <summary>Are the reports reconcilable?</summary>
+        <p>Yes. Reporting is generated from the servicing ledger that runs collection and disbursement, so figures reconcile to the underlying transactions.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can reporting support an LP or examiner review?</summary>
+        <p>Yes. The underlying, retained transaction trail supports lender, LP, and examiner review on request.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you publish portfolio performance statistics on this site?</summary>
+        <p>No. We do not publish assets under management, loan counts, recovery rates, or other performance statistics; reporting is delivered to the lender for their own book.</p>
+      </details>
       </div>
     </div>
-  </section>`
-      : ""
-  }
+  </section>
   <section class="section-border-top" aria-labelledby="cta-heading">
     <div class="container">
       <div class="cta-banner">
         <div>
           <span class="eyebrow gold">Next Step</span>
-          <h2 id="cta-heading">${esc(page.ctaHeading || "Talk Through Your Portfolio")}</h2>
-          <p>${esc(page.ctaBody || "Request a platform demo or contact institutional sales.")}</p>
+          <h2 id="cta-heading">See a reporting walkthrough</h2>
+          <p>Request a walkthrough of the reporting pack and the trail behind it.</p>
         </div>
         <div class="cta-actions">
           <a href="/request-demo" class="btn btn-primary btn-lg btn-block">Request Platform Demo</a>
@@ -252,32 +253,3 @@ ${sections}
 ></script>
 </body>
 </html>
-`;
-}
-
-mkdirSync(CONTENT, { recursive: true });
-mkdirSync(SERVICING, { recursive: true });
-
-function renderDir(dir, label) {
-  let files;
-  try {
-    files = readdirSync(dir).filter((f) => f.endsWith(".json"));
-  } catch {
-    files = [];
-  }
-  for (const file of files) {
-    const page = JSON.parse(readFileSync(join(dir, file), "utf8"));
-    const out = join(ROOT, `${page.slug}.html`);
-    writeFileSync(out, render(page));
-    console.log(`✓ ${page.slug}.html  [${label}]`);
-  }
-  return files.length;
-}
-
-const resourceCount = renderDir(CONTENT, "resources");
-const servicingCount = renderDir(SERVICING, "servicing");
-if (!resourceCount && !servicingCount) {
-  console.error("No content/resources/*.json or content/servicing/*.json files found.");
-  process.exit(1);
-}
-console.log(`\n✓ Rendered ${resourceCount} resource + ${servicingCount} servicing pages.`);

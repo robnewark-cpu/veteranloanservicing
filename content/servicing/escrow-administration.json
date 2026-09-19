@@ -1,0 +1,55 @@
+{
+  "slug": "escrow-administration",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Escrow Administration",
+  "title": "Escrow Administration | Tax, Insurance & Reserve Tracking | Veteran Loan Servicing",
+  "description": "Escrow administration for commercial loans: tracking tax, insurance, and reserve obligations tied to the collateral, with alerts and an audit trail.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Escrow administration tied to the collateral",
+  "lede": "For commercial real estate loans, taxes, insurance, and reserves protect the collateral. We track those obligations as part of servicing rather than leaving them in a spreadsheet.",
+  "about": ["Escrow administration", "Tax and insurance tracking", "Reserve accounts", "CRE servicing"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Where a loan carries escrow or reserve obligations, we inventory them, track due dates and coverage, and alert before an item lapses or a deadline is missed."
+      ],
+      "bullets": [
+        "Inventory of tax, insurance, and reserve obligations",
+        "Due-date and coverage tracking",
+        "Alerts ahead of lapse or deadline",
+        "Coordination with insurance compliance monitoring"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "Escrow items are tracked against the loan's requirements, and activity is recorded in the servicing trail. This connects directly to insurance compliance monitoring so a lapse is caught as a servicing event."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "Escrow status and upcoming obligations are visible in portfolio reporting, so lenders see exposure before it becomes a problem."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "Tracking escrow inside servicing means tax and insurance gaps surface as alerts, not as surprises at claim time or covenant review."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Do all loans have escrow?", "a": "No — escrow and reserve requirements vary by loan. We administer them where a loan carries them and confirm the requirements during boarding." },
+    { "q": "How does escrow relate to insurance monitoring?", "a": "Escrow administration coordinates with insurance compliance monitoring so a coverage lapse is caught as a tracked servicing event." },
+    { "q": "Is this for residential escrow?", "a": "No. Veteran Loan Servicing administers escrow only for commercial real estate and business/commercial loans." }
+  ],
+  "ctaHeading": "Review escrow administration",
+  "ctaBody": "Request a walkthrough of how escrow and reserve obligations are tracked for your book."
+}

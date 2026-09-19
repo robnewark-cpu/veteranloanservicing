@@ -1,0 +1,56 @@
+{
+  "slug": "default-administration",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Default Administration",
+  "title": "Default Administration | Workout & UCC Article 9 Support | Veteran Loan Servicing",
+  "description": "Default administration support for commercial loans: structured workout tracking and UCC Article 9 enforcement triggers documented in the operating trail.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Default administration support, documented",
+  "lede": "When a commercial loan defaults, timing and documentation decide recovery. We track the workout and surface UCC Article 9 enforcement triggers as servicing events — not as a lawsuit discovered after the fact.",
+  "about": ["Default administration", "Loan workout", "UCC Article 9 enforcement"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Accounts that break covenant or payment terms move into a delinquency-to-remediation workflow, with UCC Article 9 enforcement triggers documented in the operating trail so workout counsel is engaged on time rather than late.",
+        "Note: Veteran Loan Servicing provides default administration support as a servicer. It does not provide legal representation; legal remedies are pursued by the lender's counsel."
+      ],
+      "bullets": [
+        "Delinquency-to-remediation workflow",
+        "UCC Article 9 enforcement triggers documented",
+        "Timely engagement of the lender's workout counsel",
+        "Operating trail retained for the file"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "Enforcement triggers live in the operating trail rather than a quarterly report, and each step is documented so the default file is defensible."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "Default and workout status appear in portfolio reporting, and the documented trail supports the lender's counsel and any examiner or LP review."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "Surfacing breach signals as servicing events — with a clean trail — protects the lender's remedies and shortens the path from default to action."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Do you provide legal representation on defaults?", "a": "No. Veteran Loan Servicing provides default administration support as a servicer and documents enforcement triggers; legal remedies are pursued by the lender's own counsel." },
+    { "q": "How does UCC Article 9 fit in?", "a": "Where applicable, UCC Article 9 enforcement triggers are documented in the operating trail so remediation is timely and defensible." },
+    { "q": "When does an account enter default administration?", "a": "When it breaks covenant or payment terms and moves out of ordinary collections into the remediation workflow." }
+  ],
+  "ctaHeading": "Review default administration",
+  "ctaBody": "Request a walkthrough of the delinquency-to-remediation trail for your book."
+}

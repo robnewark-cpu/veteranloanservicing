@@ -1,0 +1,55 @@
+{
+  "slug": "ach-processing",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "ACH Processing",
+  "title": "ACH Processing | NACHA-Aligned Collection & Disbursement | Veteran Loan Servicing",
+  "description": "Veteran Loan Servicing's ACH payment processing is an active capability: borrower collection and lender disbursement structured around NACHA operating guidelines, with a full audit trail.",
+  "eyebrow": "Servicing Operations",
+  "h1": "ACH processing — an active capability",
+  "lede": "ACH payment processing is an active, current operational capability. This page is the single, consistent description of how it works.",
+  "about": ["ACH", "Automated Clearing House", "NACHA operating guidelines", "Loan payment collection"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Veteran Loan Servicing collects borrower payments via ACH (Automated Clearing House) and disburses to lenders on a scheduled monthly cycle. Collection and disbursement are structured around NACHA operating guidelines, and every transaction is recorded in a reconcilable audit trail. ACH payment processing is an active, current operational capability."
+      ],
+      "bullets": [
+        "Collection — borrower payments collected via ACH on the scheduled cycle",
+        "Reconciliation — each transaction recorded in a reconcilable audit trail",
+        "Disbursement — funds disbursed to lenders on a scheduled monthly cycle",
+        "Reporting — disbursement activity appears in lender portfolio reporting"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "ACH activity is structured around NACHA operating guidelines. Each transaction carries an audit-trail entry, and collection is reconciled against the loan ledger before disbursement."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "Every ACH transaction is reconcilable and retained, supporting lender reporting and examiner or LP review."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "A single, consistent ACH workflow — the same description everywhere on this site and in our chatbot — means lenders and borrowers get one straight answer about how money moves."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Is ACH processing active today?", "a": "Yes. ACH payment collection and lender disbursement are active, current operational capabilities." },
+    { "q": "How are borrower payments collected and disbursed to lenders?", "a": "Borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle, structured around NACHA operating guidelines, with a full audit trail maintained for every transaction." },
+    { "q": "Is Veteran Loan Servicing NACHA certified?", "a": "Veteran Loan Servicing structures its ACH payment processing around NACHA operating guidelines. NACHA does not certify individual companies; it publishes the operating rules that govern ACH transactions in the United States." }
+  ],
+  "ctaHeading": "Questions about ACH?",
+  "ctaBody": "Request a walkthrough of the ACH collection-and-disbursement workflow for your book."
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "payment-processing",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Payment Processing",
+  "title": "Payment Processing | Borrower Collection & Lender Disbursement | Veteran Loan Servicing",
+  "description": "How Veteran Loan Servicing processes commercial loan payments: ACH collection, reconciliation, scheduled lender disbursement, and full audit trails.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Payment processing built on a reconcilable trail",
+  "lede": "Collection and disbursement are the core of servicing. We run them as one defined sequence — collect, reconcile, disburse, report — so every dollar is traceable.",
+  "about": ["Loan payment processing", "Borrower collection", "Lender disbursement", "ACH"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle, structured around NACHA operating guidelines, with a full audit trail maintained for every transaction.",
+        "The sequence is: collect on the scheduled cycle, reconcile each transaction against the loan ledger, disburse to lenders, and reflect the activity in reporting."
+      ],
+      "bullets": [
+        "ACH collection on the scheduled cycle",
+        "Per-transaction reconciliation against the ledger",
+        "Scheduled monthly lender disbursement",
+        "Audit trail on every transaction"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "Each transaction is reconciled and recorded. Because collection and disbursement run on the same ledger, the trail from a borrower payment to the corresponding lender disbursement is continuous rather than stitched across vendors."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "Disbursement activity appears in lender portfolio reporting, and the underlying transaction trail supports examiner and LP review on request."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "One continuous trail from collection to disbursement removes the reconciliation risk that comes from splitting payments across a ledger tool and a separate disbursement process."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "How are borrower payments collected and disbursed?", "a": "Borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle, structured around NACHA operating guidelines, with a full audit trail maintained for every transaction." },
+    { "q": "Is ACH processing active today?", "a": "Yes. ACH payment collection and lender disbursement are active, current operational capabilities." },
+    { "q": "Is Veteran Loan Servicing NACHA certified?", "a": "Veteran Loan Servicing structures its ACH payment processing around NACHA operating guidelines. NACHA does not certify individual companies; it publishes the operating rules that govern ACH transactions in the United States." }
+  ],
+  "ctaHeading": "See payment processing in detail",
+  "ctaBody": "Request a walkthrough of the collection-to-disbursement trail for your portfolio."
+}

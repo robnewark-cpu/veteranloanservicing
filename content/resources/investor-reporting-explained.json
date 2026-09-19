@@ -1,0 +1,45 @@
+{
+  "slug": "investor-reporting-explained",
+  "navLabel": "Investor Reporting Explained",
+  "title": "Investor Reporting for Loan Portfolios, Explained | Veteran Loan Servicing",
+  "description": "What investor and lender reporting should include for a serviced commercial loan portfolio, and why a reconcilable trail matters for LPs and examiners.",
+  "eyebrow": "Resource · Investor Reporting",
+  "h1": "Investor reporting for loan portfolios, explained",
+  "lede": "Investors and LPs do not just want a monthly statement — they want numbers that reconcile to the underlying transactions. Here is what good servicing reporting looks like.",
+  "about": ["Investor reporting", "LP reporting", "Loan portfolio reporting"],
+  "sections": [
+    {
+      "id": "what",
+      "heading": "What reporting should include",
+      "paragraphs": [
+        "At minimum, portfolio-level and loan-level status, payment and disbursement activity, delinquency flags, and the ability to trace any reported figure back to the transactions behind it."
+      ],
+      "bullets": [
+        "Portfolio and loan-level status",
+        "Payment and lender disbursement activity",
+        "Delinquency and workout flags",
+        "A reconcilable underlying transaction trail"
+      ]
+    },
+    {
+      "id": "why-reconcilable",
+      "heading": "Why 'reconcilable' matters",
+      "paragraphs": [
+        "When reporting is produced from the same ledger that runs collection and disbursement, the numbers tie to real transactions. When it is re-keyed into a separate spreadsheet, it drifts — and that drift is exactly what an examiner or LP audit surfaces at the worst time."
+      ]
+    },
+    {
+      "id": "diligence",
+      "heading": "Reporting as a diligence asset",
+      "paragraphs": [
+        "A servicer that can answer 'show me' quickly turns an LP or examiner request into a straightforward pull. That capability is itself part of what a lender is buying."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "How often is reporting produced?", "a": "On a regular schedule agreed with the lender; the underlying transaction trail is retained and available on request." },
+    { "q": "Do you publish portfolio performance numbers publicly?", "a": "No. We do not publish assets under management, loan counts, or performance statistics; reporting is delivered privately to each lender for their own book." }
+  ],
+  "ctaHeading": "See a reporting walkthrough",
+  "ctaBody": "Request a walkthrough of the reporting pack and the trail behind it."
+}

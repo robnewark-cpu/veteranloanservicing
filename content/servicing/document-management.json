@@ -1,0 +1,55 @@
+{
+  "slug": "document-management",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Document Management",
+  "title": "Document Management | Loan File & Record Retention | Veteran Loan Servicing",
+  "description": "Loan document management and record retention for commercial portfolios: organized loan files, retained records, and controlled access supporting audit and review.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Loan files organized, retained, and access-controlled",
+  "lede": "A serviced loan is only as defensible as its file. We keep loan documents organized, retained to meet recordkeeping obligations, and available to the lender.",
+  "about": ["Document management", "Loan file management", "Record retention"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Loan documents and servicing records are organized against each loan and retained for the period servicing and recordkeeping obligations require. Access is limited to authorized personnel."
+      ],
+      "bullets": [
+        "Loan documents organized per loan",
+        "Records retained to meet obligations",
+        "Controlled, need-to-know access",
+        "Audit trail on servicing activity"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "Documents are handled within the United States with encrypted transport, and access is limited to authorized personnel on a need-to-know basis. Every transaction carries an audit-trail entry."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "On request, we can produce the loan file and servicing record supporting a lender's review, an examiner request, or a portfolio transfer."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "Organized, retained, access-controlled files make diligence, transfers, and examiner requests a retrieval task rather than a reconstruction project."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Where are documents stored?", "a": "Documents are handled within the United States with encrypted transport, and access is limited to authorized personnel on a need-to-know basis." },
+    { "q": "How long are records retained?", "a": "Records are retained for the period servicing and recordkeeping obligations require, and the retention supports lender reporting and review." },
+    { "q": "Can you produce a loan file for diligence or transfer?", "a": "Yes. On request we can produce the loan file and servicing record to support review or a portfolio transfer." }
+  ],
+  "ctaHeading": "Review document management",
+  "ctaBody": "Request a walkthrough of how loan files are organized, retained, and secured."
+}

@@ -1,86 +1,17 @@
-#!/usr/bin/env node
-/**
- * Renders buyer-intent resource pages from content/resources/*.json
- * using a shared institutional chrome (nav/footer/schema).
- */
-import { readFileSync, writeFileSync, readdirSync, mkdirSync } from "node:fs";
-import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
-const CONTENT = join(ROOT, "content", "resources");
-const SERVICING = join(ROOT, "content", "servicing");
-
-function esc(s) {
-  return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-function render(page) {
-  const faqLd = page.faqs?.length
-    ? `<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": ${JSON.stringify(
-    page.faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-    null,
-    2
-  )}
-}
-</script>`
-    : "";
-
-  const sections = (page.sections || [])
-    .map(
-      (s) => `
-  <section class="section-border-top" aria-labelledby="${esc(s.id)}">
-    <div class="container" style="max-width:820px;">
-      <h2 id="${esc(s.id)}">${esc(s.heading)}</h2>
-      ${(s.paragraphs || []).map((p) => `<p class="body-copy" style="margin-top:14px;">${p}</p>`).join("")}
-      ${
-        s.bullets
-          ? `<ul class="bullet-list" style="margin-top:18px;">${s.bullets
-              .map((b) => `<li>${b}</li>`)
-              .join("")}</ul>`
-          : ""
-      }
-    </div>
-  </section>`
-    )
-    .join("\n");
-
-  const faqs = (page.faqs || [])
-    .map(
-      (f) => `
-      <details class="faq-item">
-        <summary>${esc(f.q)}</summary>
-        <p>${esc(f.a)}</p>
-      </details>`
-    )
-    .join("");
-
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${esc(page.title)}</title>
-<meta name="description" content="${esc(page.description)}">
+<title>Borrower Communications | Statements, Notices &amp; Servicing Contact | Veteran Loan Servicing</title>
+<meta name="description" content="How Veteran Loan Servicing handles borrower communications for commercial loans: statements, payment notices, and documented servicing contact with an audit trail.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://veteranloanservicing.com/${esc(page.slug)}">
+<link rel="canonical" href="https://veteranloanservicing.com/borrower-communications">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Veteran Loan Servicing">
-<meta property="og:url" content="https://veteranloanservicing.com/${esc(page.slug)}">
-<meta property="og:title" content="${esc(page.title)}">
-<meta property="og:description" content="${esc(page.description)}">
+<meta property="og:url" content="https://veteranloanservicing.com/borrower-communications">
+<meta property="og:title" content="Borrower Communications | Statements, Notices &amp; Servicing Contact | Veteran Loan Servicing">
+<meta property="og:description" content="How Veteran Loan Servicing handles borrower communications for commercial loans: statements, payment notices, and documented servicing contact with an audit trail.">
 <meta property="og:image" content="https://veteranloanservicing.com/assets/images/og-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#05070d">
@@ -96,12 +27,12 @@ function render(page) {
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": ${JSON.stringify(page.h1)},
-  "description": ${JSON.stringify(page.description)},
+  "headline": "Borrower communications, documented and consistent",
+  "description": "How Veteran Loan Servicing handles borrower communications for commercial loans: statements, payment notices, and documented servicing contact with an audit trail.",
   "author": { "@type": "Organization", "name": "Veteran Loan Servicing" },
   "publisher": { "@id": "https://veteranloanservicing.com/#organization" },
-  "mainEntityOfPage": "https://veteranloanservicing.com/${page.slug}",
-  "about": ${JSON.stringify(page.about || [])}
+  "mainEntityOfPage": "https://veteranloanservicing.com/borrower-communications",
+  "about": ["Borrower communications","Loan statements","Servicing notices"]
 }
 </script>
 <script type="application/ld+json">
@@ -110,12 +41,43 @@ function render(page) {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veteranloanservicing.com/" },
-    { "@type": "ListItem", "position": 2, "name": ${JSON.stringify(page.sectionLabel || "Resources")}, "item": "https://veteranloanservicing.com/${page.sectionSlug || "resources"}" },
-    { "@type": "ListItem", "position": 3, "name": ${JSON.stringify(page.navLabel)}, "item": "https://veteranloanservicing.com/${page.slug}" }
+    { "@type": "ListItem", "position": 2, "name": "Servicing Operations", "item": "https://veteranloanservicing.com/servicing" },
+    { "@type": "ListItem", "position": 3, "name": "Borrower Communications", "item": "https://veteranloanservicing.com/borrower-communications" }
   ]
 }
 </script>
-${faqLd}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "Who contacts borrowers?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our servicing team handles borrower contact directly, with the interaction recorded in the servicing trail — not routed through an anonymous ticket queue."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Are borrower communications documented?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Communications tied to a loan are recorded so a lender can see what was communicated and when."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Do you communicate with residential borrowers?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Veteran Loan Servicing services commercial real estate and business/commercial loans only."
+    }
+  }
+]
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -159,32 +121,71 @@ ${faqLd}
   <section class="hero" style="padding-bottom:20px;" aria-labelledby="resource-hero">
     <div class="container" style="max-width:820px;">
       <div class="breadcrumb">
-        <a href="/">Home</a><span>/</span><a href="/${page.sectionSlug || "resources"}">${esc(page.sectionLabel || "Resources")}</a><span>/</span><span aria-current="page">${esc(page.navLabel)}</span>
+        <a href="/">Home</a><span>/</span><a href="/servicing">Servicing Operations</a><span>/</span><span aria-current="page">Borrower Communications</span>
       </div>
-      <span class="eyebrow">${esc(page.eyebrow)}</span>
-      <h1 id="resource-hero">${esc(page.h1)}</h1>
-      <p class="hero-desc-1">${esc(page.lede)}</p>
+      <span class="eyebrow">Servicing Operations</span>
+      <h1 id="resource-hero">Borrower communications, documented and consistent</h1>
+      <p class="hero-desc-1">Borrowers are the counterparties who keep a loan performing. Clear, consistent, documented communication reduces disputes and preserves the lender relationship.</p>
     </div>
   </section>
-${sections}
-  ${
-    faqs
-      ? `<section class="section-border-top" aria-labelledby="faq-heading">
+
+  <section class="section-border-top" aria-labelledby="process">
+    <div class="container" style="max-width:820px;">
+      <h2 id="process">Process</h2>
+      <p class="body-copy" style="margin-top:14px;">Borrowers receive statement cycles and payment-related notices on a regular schedule. Servicing contact is handled by our team and recorded, so a lender can see what was communicated and when.</p>
+      <ul class="bullet-list" style="margin-top:18px;"><li>Scheduled statement cycles</li><li>Payment and delinquency notices</li><li>Documented servicing contact</li><li>Escalation into workout when terms are broken</li></ul>
+    </div>
+  </section>
+
+  <section class="section-border-top" aria-labelledby="controls">
+    <div class="container" style="max-width:820px;">
+      <h2 id="controls">Controls</h2>
+      <p class="body-copy" style="margin-top:14px;">Communications tied to a loan are recorded in the servicing trail. Delinquency notices follow a defined sequence rather than ad-hoc outreach.</p>
+      
+    </div>
+  </section>
+
+  <section class="section-border-top" aria-labelledby="reporting">
+    <div class="container" style="max-width:820px;">
+      <h2 id="reporting">Reporting</h2>
+      <p class="body-copy" style="margin-top:14px;">The communication trail is available to lenders on request and supports the documentation examiners and LPs expect around delinquency handling.</p>
+      
+    </div>
+  </section>
+
+  <section class="section-border-top" aria-labelledby="benefits">
+    <div class="container" style="max-width:820px;">
+      <h2 id="benefits">Benefits</h2>
+      <p class="body-copy" style="margin-top:14px;">Documented, consistent borrower contact shortens the distance between a missed payment and a resolution — and removes the 'what did the servicer actually say' ambiguity.</p>
+      
+    </div>
+  </section>
+  <section class="section-border-top" aria-labelledby="faq-heading">
     <div class="container" style="max-width:820px;">
       <h2 id="faq-heading">FAQ</h2>
-      <div class="faq-list" style="margin-top:20px;">${faqs}
+      <div class="faq-list" style="margin-top:20px;">
+      <details class="faq-item">
+        <summary>Who contacts borrowers?</summary>
+        <p>Our servicing team handles borrower contact directly, with the interaction recorded in the servicing trail — not routed through an anonymous ticket queue.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are borrower communications documented?</summary>
+        <p>Yes. Communications tied to a loan are recorded so a lender can see what was communicated and when.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you communicate with residential borrowers?</summary>
+        <p>No. Veteran Loan Servicing services commercial real estate and business/commercial loans only.</p>
+      </details>
       </div>
     </div>
-  </section>`
-      : ""
-  }
+  </section>
   <section class="section-border-top" aria-labelledby="cta-heading">
     <div class="container">
       <div class="cta-banner">
         <div>
           <span class="eyebrow gold">Next Step</span>
-          <h2 id="cta-heading">${esc(page.ctaHeading || "Talk Through Your Portfolio")}</h2>
-          <p>${esc(page.ctaBody || "Request a platform demo or contact institutional sales.")}</p>
+          <h2 id="cta-heading">See how borrower contact is handled</h2>
+          <p>Request a walkthrough of statements, notices, and the communication trail.</p>
         </div>
         <div class="cta-actions">
           <a href="/request-demo" class="btn btn-primary btn-lg btn-block">Request Platform Demo</a>
@@ -252,32 +253,3 @@ ${sections}
 ></script>
 </body>
 </html>
-`;
-}
-
-mkdirSync(CONTENT, { recursive: true });
-mkdirSync(SERVICING, { recursive: true });
-
-function renderDir(dir, label) {
-  let files;
-  try {
-    files = readdirSync(dir).filter((f) => f.endsWith(".json"));
-  } catch {
-    files = [];
-  }
-  for (const file of files) {
-    const page = JSON.parse(readFileSync(join(dir, file), "utf8"));
-    const out = join(ROOT, `${page.slug}.html`);
-    writeFileSync(out, render(page));
-    console.log(`✓ ${page.slug}.html  [${label}]`);
-  }
-  return files.length;
-}
-
-const resourceCount = renderDir(CONTENT, "resources");
-const servicingCount = renderDir(SERVICING, "servicing");
-if (!resourceCount && !servicingCount) {
-  console.error("No content/resources/*.json or content/servicing/*.json files found.");
-  process.exit(1);
-}
-console.log(`\n✓ Rendered ${resourceCount} resource + ${servicingCount} servicing pages.`);

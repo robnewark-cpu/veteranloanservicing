@@ -19,11 +19,31 @@
 - [Case Studies / Early Partners](https://veteranloanservicing.com/case-studies): Engagement process and Early Partner terms
 
 ## Resources (buyer intent)
+- [What is commercial loan servicing?](https://veteranloanservicing.com/what-is-commercial-loan-servicing)
 - [Commercial loan sub-servicing](https://veteranloanservicing.com/commercial-loan-sub-servicing)
+- [Investor reporting explained](https://veteranloanservicing.com/investor-reporting-explained)
 - [CRE insurance compliance monitoring](https://veteranloanservicing.com/cre-insurance-compliance-monitoring)
 - [UCC Article 9 loan enforcement](https://veteranloanservicing.com/ucc-article-9-loan-enforcement)
+- [Loan servicing glossary](https://veteranloanservicing.com/loan-servicing-glossary)
 - [Resources index](https://veteranloanservicing.com/resources)
 - [Demo calendar](https://veteranloanservicing.com/demo-calendar): Book a 30-minute platform walkthrough
+
+## Servicing operations
+- [Servicing Operations hub](https://veteranloanservicing.com/servicing)
+- [Portfolio Boarding](https://veteranloanservicing.com/portfolio-boarding)
+- [Portfolio Transfers](https://veteranloanservicing.com/portfolio-transfers)
+- [Payment Processing](https://veteranloanservicing.com/payment-processing)
+- [ACH Processing](https://veteranloanservicing.com/ach-processing): Active capability — NACHA-aligned collection & disbursement, full audit trail
+- [Borrower Communications](https://veteranloanservicing.com/borrower-communications)
+- [Escrow Administration](https://veteranloanservicing.com/escrow-administration)
+- [Collections Administration](https://veteranloanservicing.com/collections-administration)
+- [Default Administration](https://veteranloanservicing.com/default-administration)
+- [Investor Reporting](https://veteranloanservicing.com/investor-reporting)
+- [Document Management](https://veteranloanservicing.com/document-management)
+- [Special Assets](https://veteranloanservicing.com/special-assets)
+
+## Get started (conversion paths)
+- [Get Started hub](https://veteranloanservicing.com/get-started): Request pricing, servicing proposal, portfolio review, executive consultation, or loan portfolio assessment
 
 ## Entity facts
 - Legal/brand: Veteran Loan Servicing
