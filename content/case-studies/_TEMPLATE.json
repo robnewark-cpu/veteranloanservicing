@@ -1,0 +1,24 @@
+{
+  "_INSTRUCTIONS": "Copy this file to a real slug (e.g. anonymized-cre-fund.json) to publish a case study. Files starting with '_' are NOT built. A case study may ONLY be published when: (1) the client authorized it in writing, OR it is an anonymized scenario with no identifying detail; (2) every figure is verified and in the claims registry; (3) it passes the approval workflow. No fabricated metrics, logos, or testimonials.",
+  "_authorization": "REQUIRED before publishing: 'anonymized' | 'client-authorized' | 'first-party-disclosed'. Do not build a real slug without this being set and true.",
+  "slug": "REPLACE-ME-slug",
+  "sectionLabel": "Case Studies",
+  "sectionSlug": "case-studies",
+  "navLabel": "Short Nav Label",
+  "title": "Case Study Title | Veteran Loan Servicing",
+  "description": "One-sentence meta description of the anonymized or authorized case study.",
+  "eyebrow": "Case Study · Anonymized",
+  "h1": "Headline of the engagement",
+  "lede": "One-paragraph summary. Anonymized unless the client authorized identification.",
+  "about": ["Commercial loan servicing", "Case study"],
+  "sections": [
+    { "id": "situation", "heading": "Situation", "paragraphs": ["What the client faced. No identifying detail unless authorized."] },
+    { "id": "approach", "heading": "Approach", "paragraphs": ["What we did — process and controls."] },
+    { "id": "outcome", "heading": "Outcome", "paragraphs": ["Only VERIFIED outcomes. No fabricated recovery rates, delinquency metrics, or performance statistics. If no metric is verified, describe the operational result qualitatively."] }
+  ],
+  "faqs": [
+    { "q": "Is this client identified?", "a": "Only if the client authorized identification in writing; otherwise the case study is anonymized." }
+  ],
+  "ctaHeading": "Talk through a similar engagement",
+  "ctaBody": "Request a walkthrough for a portfolio like this one."
+}
