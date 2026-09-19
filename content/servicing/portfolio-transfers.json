@@ -9,6 +9,17 @@
   "h1": "Servicing transfers without dropped payments",
   "lede": "Whether you are moving a book off a prior servicer or acquiring a loan portfolio, the transfer is the moment borrowers and lenders judge the servicer. We plan it so collection and disbursement continue without a gap.",
   "about": ["Servicing transfer", "Portfolio transfer", "Loan book migration", "Loan purchaser servicing"],
+  "howto": {
+    "name": "How a servicing transfer is run",
+    "description": "The steps Veteran Loan Servicing follows to transfer a commercial loan book in without a payment gap.",
+    "steps": [
+      { "name": "Intake", "text": "Take in loan data from the prior servicer or loan seller." },
+      { "name": "Validation", "text": "Validate balances and payment history against the source records." },
+      { "name": "Notification", "text": "Notify borrowers and lenders of the effective transfer date." },
+      { "name": "Cutover", "text": "On the defined transfer date, servicing moves onto our platform." },
+      { "name": "Continuity", "text": "ACH collection and lender disbursement continue on schedule after cutover." }
+    ]
+  },
   "sections": [
     {
       "id": "process",

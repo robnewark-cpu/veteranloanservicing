@@ -38,6 +38,27 @@ function render(page) {
 </script>`
     : "";
 
+  const howtoLd = page.howto?.steps?.length
+    ? `<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": ${JSON.stringify(page.howto.name || page.h1)},
+  "description": ${JSON.stringify(page.howto.description || page.lede)},
+  "step": ${JSON.stringify(
+    page.howto.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+    null,
+    2
+  )}
+}
+</script>`
+    : "";
+
   const sections = (page.sections || [])
     .map(
       (s) => `
@@ -116,6 +137,7 @@ function render(page) {
 }
 </script>
 ${faqLd}
+${howtoLd}
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
