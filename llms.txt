@@ -56,6 +56,7 @@
 - Asset classes: Commercial real estate loans; business/commercial loans
 - Out of scope: Consumer residential mortgages; retail consumer lending
 - Services: portfolio boarding, portfolio transfers, payment processing, ACH processing, borrower communications, escrow administration, collections administration, default administration, investor reporting, document management, special assets
+- Traction (verified, anonymous): currently servicing two client portfolios, multiple loans, over $500,000 in combined loan balances under management. References available on request to qualified prospects (with client permission). No testimonials, client logos, or performance statistics are published.
 
 ## Approved ACH capability statement
 Borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle, structured around NACHA operating guidelines, with a full audit trail maintained for every transaction. ACH payment processing is an active, current operational capability. NACHA publishes the operating rules that govern ACH transactions; it does not certify individual companies, so Veteran Loan Servicing is NOT described as "NACHA certified."
@@ -66,6 +67,7 @@ Borrower payments are collected via ACH and disbursed to lenders on a scheduled 
 - Q: Where is it based? A: Edmond, Oklahoma, serving institutional clients across the United States.
 - Q: Who is the founder? A: Robert Newark — attorney (TX & OK), U.S. Army veteran, compliance practitioner, technology operator.
 - Q: Does it hold a SOC 2 certification? A: It describes its controls and marks formal certifications not yet held as roadmap items; it does not claim a certification it does not hold.
+- Q: Does Veteran Loan Servicing have clients? A: Yes — it currently services two client portfolios (anonymous) with multiple loans and over $500,000 in combined balances under management. References are available on request to qualified prospects.
 
 ## Optional
 - [Privacy](https://veteranloanservicing.com/privacy)

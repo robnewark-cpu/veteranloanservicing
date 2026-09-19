@@ -19,10 +19,14 @@ _Status values: **Verified** (publishable) · **Placeholder** (labeled, not asse
 | C12 | UCC Article 9 enforcement / remedies framework | Existing site | **Verified** | 2026-09-19 | Robert Newark |
 | C13 | Insurance compliance monitoring | Existing site | **Verified** | 2026-09-19 | Robert Newark |
 | C14 | Data handled on Cloudflare edge; encrypted transport; US data | Deployment config (`wrangler.jsonc`) | **Verified** | 2026-09-19 | Robert Newark |
+| C15 | Currently servicing **two client portfolios** (anonymous) | Owner attestation 2026-09-19 | **Verified** | 2026-09-19 | Robert Newark |
+| C16 | Managing **multiple loans** across those two clients | Owner attestation 2026-09-19 | **Verified** | 2026-09-19 | Robert Newark |
+| C17 | **Over $500,000** in combined loan balances under management | Owner attestation 2026-09-19 | **Verified** | 2026-09-19 | Robert Newark |
+| C18 | **References available on request** (named privately to qualified prospects) | Owner attestation 2026-09-19 | **Verified** | 2026-09-19 | Robert Newark |
 | P1 | Founder speaking engagements / publications / interviews | — | **Placeholder** (awaiting list) | — | — |
 | P2 | SOC 2 / ISO 27001 certification **held by VLS** | — | **Placeholder** — VLS is not certified; describe practices only, never claim a cert | — | — |
 | P3 | Named client case studies / testimonials / logos | — | **Placeholder** — require documented client authorization | — | — |
-| X1 | Assets under management, portfolio/loan/customer counts | — | **Prohibited** | — | — |
+| X1 | Assets under management beyond the verified ">$500K combined balances" figure; precise loan/customer counts beyond "two clients / multiple loans" | — | **Prohibited** (only C15–C17 verified figures may be stated) | — | — |
 | X2 | Recovery rates, delinquency metrics, servicing volume | — | **Prohibited** | — | — |
 | X3 | Performance statistics of any kind | — | **Prohibited** | — | — |
 | X4 | International operations (London / Singapore) | Stale README only | **Prohibited** — contradicts US-only positioning; README corrected | — | — |

@@ -10,6 +10,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const CONTENT = join(ROOT, "content", "resources");
 const SERVICING = join(ROOT, "content", "servicing");
+const CASE_STUDIES = join(ROOT, "content", "case-studies");
 
 function esc(s) {
   return String(s)
@@ -279,11 +280,12 @@ ${sections}
 
 mkdirSync(CONTENT, { recursive: true });
 mkdirSync(SERVICING, { recursive: true });
+mkdirSync(CASE_STUDIES, { recursive: true });
 
 function renderDir(dir, label) {
   let files;
   try {
-    files = readdirSync(dir).filter((f) => f.endsWith(".json"));
+    files = readdirSync(dir).filter((f) => f.endsWith(".json") && !f.startsWith("_"));
   } catch {
     files = [];
   }
@@ -298,8 +300,9 @@ function renderDir(dir, label) {
 
 const resourceCount = renderDir(CONTENT, "resources");
 const servicingCount = renderDir(SERVICING, "servicing");
-if (!resourceCount && !servicingCount) {
-  console.error("No content/resources/*.json or content/servicing/*.json files found.");
+const caseCount = renderDir(CASE_STUDIES, "case-studies");
+if (!resourceCount && !servicingCount && !caseCount) {
+  console.error("No content/{resources,servicing,case-studies}/*.json files found.");
   process.exit(1);
 }
-console.log(`\n✓ Rendered ${resourceCount} resource + ${servicingCount} servicing pages.`);
+console.log(`\n✓ Rendered ${resourceCount} resource + ${servicingCount} servicing + ${caseCount} case-study pages.`);
