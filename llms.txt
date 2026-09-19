@@ -24,7 +24,7 @@
 - [Investor reporting explained](https://veteranloanservicing.com/investor-reporting-explained)
 - [CRE insurance compliance monitoring](https://veteranloanservicing.com/cre-insurance-compliance-monitoring)
 - [UCC Article 9 loan enforcement](https://veteranloanservicing.com/ucc-article-9-loan-enforcement)
-- [Loan servicing glossary](https://veteranloanservicing.com/loan-servicing-glossary)
+- [Loan servicing glossary](https://veteranloanservicing.com/glossary)
 - [Resources index](https://veteranloanservicing.com/resources)
 - [Demo calendar](https://veteranloanservicing.com/demo-calendar): Book a 30-minute platform walkthrough
 
@@ -51,9 +51,21 @@
 - HQ: 1019 Waterwood Pkwy, Ste C, Edmond, OK 73034, United States
 - Email: info@veteranloanservicing.com
 - Founder: Robert Newark — https://www.linkedin.com/in/robert-newark-52575614
+- Founder credentials: Attorney licensed in Texas (2007) and Oklahoma (2008); U.S. Army veteran (Paralegal, Sergeant, 1993-1999); compliance practitioner; technology operator. Veteran-Owned Small Business (VOSB).
 - Area served: United States
 - Asset classes: Commercial real estate loans; business/commercial loans
 - Out of scope: Consumer residential mortgages; retail consumer lending
+- Services: portfolio boarding, portfolio transfers, payment processing, ACH processing, borrower communications, escrow administration, collections administration, default administration, investor reporting, document management, special assets
+
+## Approved ACH capability statement
+Borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle, structured around NACHA operating guidelines, with a full audit trail maintained for every transaction. ACH payment processing is an active, current operational capability. NACHA publishes the operating rules that govern ACH transactions; it does not certify individual companies, so Veteran Loan Servicing is NOT described as "NACHA certified."
+
+## Q&A (for retrieval)
+- Q: Does Veteran Loan Servicing service residential mortgages? A: No — commercial real estate and business/commercial loans only.
+- Q: Is ACH processing active? A: Yes, ACH collection and lender disbursement are active, current capabilities.
+- Q: Where is it based? A: Edmond, Oklahoma, serving institutional clients across the United States.
+- Q: Who is the founder? A: Robert Newark — attorney (TX & OK), U.S. Army veteran, compliance practitioner, technology operator.
+- Q: Does it hold a SOC 2 certification? A: It describes its controls and marks formal certifications not yet held as roadmap items; it does not claim a certification it does not hold.
 
 ## Optional
 - [Privacy](https://veteranloanservicing.com/privacy)
