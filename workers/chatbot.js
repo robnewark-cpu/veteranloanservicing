@@ -33,10 +33,14 @@ CRITICAL FACTS — always follow these:
 - Asset classes: commercial real estate loans and business/commercial loans ONLY.
 - We do NOT service consumer residential mortgages, retail family banking products, or public consumer lending systems.
 - Services include: sub-servicing, default and workout management, corporate insurance compliance monitoring, UCC Article 9 contract enforcement, and ACH payment collection/disbursement aligned to NACHA operating guidelines.
+- ACH is ACTIVE: borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle, structured around NACHA operating guidelines, with a full audit trail maintained for every transaction. NACHA does not certify companies — never say "NACHA certified".
+- Founder: Robert Newark — attorney licensed in Texas (2007) and Oklahoma (2008), U.S. Army veteran (Paralegal, Sergeant, 1993–1999), compliance practitioner, and technology operator. Veteran-Owned Small Business (VOSB). Founder profile: /founder ; leadership: /leadership.
+- For procurement/security questions, point to the Trust Center at /trust. For lender/investor due diligence, point to /due-diligence (they can request a due-diligence package there).
+- Never state assets under management, portfolio/loan/customer counts, recovery or delinquency rates, or any performance statistic — we do not publish those.
 - Headquarters: 1019 Waterwood Pkwy, Ste C, Edmond, OK 73034. We serve institutional clients across the United States.
 - Contact email: info@veteranloanservicing.com
 - Demo requests: direct visitors to the Request Platform Demo page at /request-demo
-- Solution pages: /institutional-services, /enterprise-risk-compliance, /global-asset-technology, /case-studies
+- Solution pages: /institutional-services, /enterprise-risk-compliance, /global-asset-technology, /case-studies, /trust, /due-diligence, /founder
 
 Your role: help visitors understand our institutional servicing platform and point them to the right next step. Be professional, concise, and accurate. Never claim we service residential mortgages or consumer home loans.`,
     fallback: vlsFallback,
@@ -224,7 +228,16 @@ function vlsFallback(question) {
     return "We're headquartered in Edmond, Oklahoma (1019 Waterwood Pkwy, Ste C, Edmond, OK 73034) and service institutional clients across the United States.";
   }
   if (/payment|ach|nacha|disburse/.test(q)) {
-    return "Borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle, structured around NACHA operating guidelines with a full audit trail for every transaction.";
+    return "Borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle, structured around NACHA operating guidelines with a full audit trail for every transaction. ACH processing is an active, current capability.";
+  }
+  if (/founder|robert|newark|attorney|veteran|who runs|who leads|leadership/.test(q)) {
+    return "Veteran Loan Servicing is founded and led by Robert Newark — an attorney licensed in Texas (2007) and Oklahoma (2008), U.S. Army veteran, compliance practitioner, and technology operator. See /founder for his full profile and /leadership for the team.";
+  }
+  if (/trust|security|data|soc ?2|iso|hosting|encrypt|access control/.test(q)) {
+    return "Our Trust Center at /trust covers security, data protection, access controls, business continuity, vendor management, and operational controls for procurement review. We describe the controls we operate and mark certifications we don't yet hold as roadmap items.";
+  }
+  if (/due diligence|diligence|procurement|vendor review|package|investor/.test(q)) {
+    return "Our Due Diligence Center at /due-diligence covers operational, technology, compliance, vendor, and investor due diligence — and you can request a due-diligence package there to answer most questions before a call.";
   }
   if (/demo|schedule|walkthrough/.test(q)) {
     return "You can request a guided platform demo at /request-demo — we'll tailor the walkthrough to your fund's asset composition.";
