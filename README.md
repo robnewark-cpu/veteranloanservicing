@@ -3,7 +3,10 @@
 This repository contains the static web deployment build layout for **Veteran Loan Servicing**, configured to operate securely as an institutional B2B enterprise portfolio sub-servicing matrix outside consumer-facing residential mortgage sectors.
 
 ## Global Directory Configuration & Verification
-The global operational headquarters configuration is anchored out of **Edmond, OK**, managing synchronized reporting ledgers across international target operations (London, Singapore). 
+The operational headquarters is anchored in **Edmond, OK**. Veteran Loan Servicing is a
+**US-based** institutional B2B platform serving clients across the United States. It does
+**not** operate international offices — earlier references to London/Singapore were
+inaccurate and have been removed to match the site's actual (US-only) positioning.
 
 All standard structural pages include verified microdata mappings (`Schema.org` definitions) matching the baseline validation protocols.
 
