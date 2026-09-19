@@ -1,0 +1,55 @@
+{
+  "slug": "borrower-communications",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Borrower Communications",
+  "title": "Borrower Communications | Statements, Notices & Servicing Contact | Veteran Loan Servicing",
+  "description": "How Veteran Loan Servicing handles borrower communications for commercial loans: statements, payment notices, and documented servicing contact with an audit trail.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Borrower communications, documented and consistent",
+  "lede": "Borrowers are the counterparties who keep a loan performing. Clear, consistent, documented communication reduces disputes and preserves the lender relationship.",
+  "about": ["Borrower communications", "Loan statements", "Servicing notices"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Borrowers receive statement cycles and payment-related notices on a regular schedule. Servicing contact is handled by our team and recorded, so a lender can see what was communicated and when."
+      ],
+      "bullets": [
+        "Scheduled statement cycles",
+        "Payment and delinquency notices",
+        "Documented servicing contact",
+        "Escalation into workout when terms are broken"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "Communications tied to a loan are recorded in the servicing trail. Delinquency notices follow a defined sequence rather than ad-hoc outreach."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "The communication trail is available to lenders on request and supports the documentation examiners and LPs expect around delinquency handling."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "Documented, consistent borrower contact shortens the distance between a missed payment and a resolution — and removes the 'what did the servicer actually say' ambiguity."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Who contacts borrowers?", "a": "Our servicing team handles borrower contact directly, with the interaction recorded in the servicing trail — not routed through an anonymous ticket queue." },
+    { "q": "Are borrower communications documented?", "a": "Yes. Communications tied to a loan are recorded so a lender can see what was communicated and when." },
+    { "q": "Do you communicate with residential borrowers?", "a": "No. Veteran Loan Servicing services commercial real estate and business/commercial loans only." }
+  ],
+  "ctaHeading": "See how borrower contact is handled",
+  "ctaBody": "Request a walkthrough of statements, notices, and the communication trail."
+}

@@ -1,86 +1,17 @@
-#!/usr/bin/env node
-/**
- * Renders buyer-intent resource pages from content/resources/*.json
- * using a shared institutional chrome (nav/footer/schema).
- */
-import { readFileSync, writeFileSync, readdirSync, mkdirSync } from "node:fs";
-import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
-const CONTENT = join(ROOT, "content", "resources");
-const SERVICING = join(ROOT, "content", "servicing");
-
-function esc(s) {
-  return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-function render(page) {
-  const faqLd = page.faqs?.length
-    ? `<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": ${JSON.stringify(
-    page.faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-    null,
-    2
-  )}
-}
-</script>`
-    : "";
-
-  const sections = (page.sections || [])
-    .map(
-      (s) => `
-  <section class="section-border-top" aria-labelledby="${esc(s.id)}">
-    <div class="container" style="max-width:820px;">
-      <h2 id="${esc(s.id)}">${esc(s.heading)}</h2>
-      ${(s.paragraphs || []).map((p) => `<p class="body-copy" style="margin-top:14px;">${p}</p>`).join("")}
-      ${
-        s.bullets
-          ? `<ul class="bullet-list" style="margin-top:18px;">${s.bullets
-              .map((b) => `<li>${b}</li>`)
-              .join("")}</ul>`
-          : ""
-      }
-    </div>
-  </section>`
-    )
-    .join("\n");
-
-  const faqs = (page.faqs || [])
-    .map(
-      (f) => `
-      <details class="faq-item">
-        <summary>${esc(f.q)}</summary>
-        <p>${esc(f.a)}</p>
-      </details>`
-    )
-    .join("");
-
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${esc(page.title)}</title>
-<meta name="description" content="${esc(page.description)}">
+<title>What Is Commercial Loan Servicing? | Plain-Language Guide | Veteran Loan Servicing</title>
+<meta name="description" content="A plain-language explanation of commercial loan servicing: what a servicer does, how sub-servicing works, and how it differs from residential mortgage servicing.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://veteranloanservicing.com/${esc(page.slug)}">
+<link rel="canonical" href="https://veteranloanservicing.com/what-is-commercial-loan-servicing">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Veteran Loan Servicing">
-<meta property="og:url" content="https://veteranloanservicing.com/${esc(page.slug)}">
-<meta property="og:title" content="${esc(page.title)}">
-<meta property="og:description" content="${esc(page.description)}">
+<meta property="og:url" content="https://veteranloanservicing.com/what-is-commercial-loan-servicing">
+<meta property="og:title" content="What Is Commercial Loan Servicing? | Plain-Language Guide | Veteran Loan Servicing">
+<meta property="og:description" content="A plain-language explanation of commercial loan servicing: what a servicer does, how sub-servicing works, and how it differs from residential mortgage servicing.">
 <meta property="og:image" content="https://veteranloanservicing.com/assets/images/og-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#05070d">
@@ -96,12 +27,12 @@ function render(page) {
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": ${JSON.stringify(page.h1)},
-  "description": ${JSON.stringify(page.description)},
+  "headline": "What is commercial loan servicing?",
+  "description": "A plain-language explanation of commercial loan servicing: what a servicer does, how sub-servicing works, and how it differs from residential mortgage servicing.",
   "author": { "@type": "Organization", "name": "Veteran Loan Servicing" },
   "publisher": { "@id": "https://veteranloanservicing.com/#organization" },
-  "mainEntityOfPage": "https://veteranloanservicing.com/${page.slug}",
-  "about": ${JSON.stringify(page.about || [])}
+  "mainEntityOfPage": "https://veteranloanservicing.com/what-is-commercial-loan-servicing",
+  "about": ["Commercial loan servicing","Loan servicing definition","Sub-servicing"]
 }
 </script>
 <script type="application/ld+json">
@@ -110,12 +41,43 @@ function render(page) {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veteranloanservicing.com/" },
-    { "@type": "ListItem", "position": 2, "name": ${JSON.stringify(page.sectionLabel || "Resources")}, "item": "https://veteranloanservicing.com/${page.sectionSlug || "resources"}" },
-    { "@type": "ListItem", "position": 3, "name": ${JSON.stringify(page.navLabel)}, "item": "https://veteranloanservicing.com/${page.slug}" }
+    { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://veteranloanservicing.com/resources" },
+    { "@type": "ListItem", "position": 3, "name": "What Is Loan Servicing", "item": "https://veteranloanservicing.com/what-is-commercial-loan-servicing" }
   ]
 }
 </script>
-${faqLd}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "What does a loan servicer actually do?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Collects borrower payments, disburses to the lender, produces reporting, tracks insurance/escrow, and manages delinquency and default — all with an audit trail."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "What is sub-servicing?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sub-servicing is when a third party performs servicing functions for a lender that owns the loans but does not run the servicing operation itself."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Do you service residential mortgages?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Veteran Loan Servicing services commercial real estate and business/commercial loans only."
+    }
+  }
+]
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -159,32 +121,63 @@ ${faqLd}
   <section class="hero" style="padding-bottom:20px;" aria-labelledby="resource-hero">
     <div class="container" style="max-width:820px;">
       <div class="breadcrumb">
-        <a href="/">Home</a><span>/</span><a href="/${page.sectionSlug || "resources"}">${esc(page.sectionLabel || "Resources")}</a><span>/</span><span aria-current="page">${esc(page.navLabel)}</span>
+        <a href="/">Home</a><span>/</span><a href="/resources">Resources</a><span>/</span><span aria-current="page">What Is Loan Servicing</span>
       </div>
-      <span class="eyebrow">${esc(page.eyebrow)}</span>
-      <h1 id="resource-hero">${esc(page.h1)}</h1>
-      <p class="hero-desc-1">${esc(page.lede)}</p>
+      <span class="eyebrow">Resource · Definitions</span>
+      <h1 id="resource-hero">What is commercial loan servicing?</h1>
+      <p class="hero-desc-1">Commercial loan servicing is the ongoing administration of a loan after it is made — collecting payments, disbursing to the lender, tracking obligations, and handling delinquency — for commercial, not consumer, loans.</p>
     </div>
   </section>
-${sections}
-  ${
-    faqs
-      ? `<section class="section-border-top" aria-labelledby="faq-heading">
+
+  <section class="section-border-top" aria-labelledby="definition">
+    <div class="container" style="max-width:820px;">
+      <h2 id="definition">Definition</h2>
+      <p class="body-copy" style="margin-top:14px;">A loan servicer administers a loan on behalf of the lender or investor who holds it. For commercial loans, that means collecting borrower payments, disbursing funds to the lender, producing statements and reporting, tracking insurance and escrow obligations, and managing delinquency and default when they occur.</p><p class="body-copy" style="margin-top:14px;">A sub-servicer performs these functions for a lender that owns the loans but does not want to run the servicing operation itself.</p>
+      <ul class="bullet-list" style="margin-top:18px;"><li>Payment collection and lender disbursement</li><li>Statements and portfolio reporting</li><li>Insurance and escrow obligation tracking</li><li>Delinquency, workout, and default administration</li></ul>
+    </div>
+  </section>
+
+  <section class="section-border-top" aria-labelledby="vs-residential">
+    <div class="container" style="max-width:820px;">
+      <h2 id="vs-residential">How is it different from residential mortgage servicing?</h2>
+      <p class="body-copy" style="margin-top:14px;">Residential mortgage servicing is heavily regulated consumer activity governed by residential mortgage licensing regimes and consumer-protection rules. Commercial loan servicing is a B2B activity between institutional parties. Veteran Loan Servicing operates only in the commercial space and does not service consumer residential mortgages.</p>
+      
+    </div>
+  </section>
+
+  <section class="section-border-top" aria-labelledby="why-outsource">
+    <div class="container" style="max-width:820px;">
+      <h2 id="why-outsource">Why lenders use a sub-servicer</h2>
+      <p class="body-copy" style="margin-top:14px;">Running servicing in-house means building payment operations, reporting, delinquency workflows, and an audit trail. Many credit funds, banks, and specialty lenders prefer a sub-servicer so they can focus on originating and managing capital while a dedicated operation handles the back office.</p>
+      
+    </div>
+  </section>
+  <section class="section-border-top" aria-labelledby="faq-heading">
     <div class="container" style="max-width:820px;">
       <h2 id="faq-heading">FAQ</h2>
-      <div class="faq-list" style="margin-top:20px;">${faqs}
+      <div class="faq-list" style="margin-top:20px;">
+      <details class="faq-item">
+        <summary>What does a loan servicer actually do?</summary>
+        <p>Collects borrower payments, disburses to the lender, produces reporting, tracks insurance/escrow, and manages delinquency and default — all with an audit trail.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What is sub-servicing?</summary>
+        <p>Sub-servicing is when a third party performs servicing functions for a lender that owns the loans but does not run the servicing operation itself.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you service residential mortgages?</summary>
+        <p>No. Veteran Loan Servicing services commercial real estate and business/commercial loans only.</p>
+      </details>
       </div>
     </div>
-  </section>`
-      : ""
-  }
+  </section>
   <section class="section-border-top" aria-labelledby="cta-heading">
     <div class="container">
       <div class="cta-banner">
         <div>
           <span class="eyebrow gold">Next Step</span>
-          <h2 id="cta-heading">${esc(page.ctaHeading || "Talk Through Your Portfolio")}</h2>
-          <p>${esc(page.ctaBody || "Request a platform demo or contact institutional sales.")}</p>
+          <h2 id="cta-heading">Talk through your servicing needs</h2>
+          <p>Request a walkthrough of how sub-servicing would apply to your portfolio.</p>
         </div>
         <div class="cta-actions">
           <a href="/request-demo" class="btn btn-primary btn-lg btn-block">Request Platform Demo</a>
@@ -252,32 +245,3 @@ ${sections}
 ></script>
 </body>
 </html>
-`;
-}
-
-mkdirSync(CONTENT, { recursive: true });
-mkdirSync(SERVICING, { recursive: true });
-
-function renderDir(dir, label) {
-  let files;
-  try {
-    files = readdirSync(dir).filter((f) => f.endsWith(".json"));
-  } catch {
-    files = [];
-  }
-  for (const file of files) {
-    const page = JSON.parse(readFileSync(join(dir, file), "utf8"));
-    const out = join(ROOT, `${page.slug}.html`);
-    writeFileSync(out, render(page));
-    console.log(`✓ ${page.slug}.html  [${label}]`);
-  }
-  return files.length;
-}
-
-const resourceCount = renderDir(CONTENT, "resources");
-const servicingCount = renderDir(SERVICING, "servicing");
-if (!resourceCount && !servicingCount) {
-  console.error("No content/resources/*.json or content/servicing/*.json files found.");
-  process.exit(1);
-}
-console.log(`\n✓ Rendered ${resourceCount} resource + ${servicingCount} servicing pages.`);

@@ -1,0 +1,55 @@
+{
+  "slug": "investor-reporting",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Investor Reporting",
+  "title": "Investor Reporting | Lender & LP Portfolio Reporting | Veteran Loan Servicing",
+  "description": "Investor and lender reporting for commercial loan portfolios: disbursement trails, delinquency status, and reconcilable activity that supports LP and examiner review.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Reporting your LPs and examiners can rely on",
+  "lede": "Institutional capital does not just want a statement — it wants a reconcilable trail. Our reporting is built on the same ledger that runs collection and disbursement.",
+  "about": ["Investor reporting", "Lender reporting", "LP reporting", "Portfolio reporting"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Reporting is generated from the servicing ledger: loan status, payment activity, delinquency flags, and lender disbursement — reconciled rather than re-keyed."
+      ],
+      "bullets": [
+        "Portfolio and loan-level status",
+        "Payment and disbursement activity",
+        "Delinquency and workout flags",
+        "Reconcilable underlying transaction trail"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "Because reporting is produced from the same ledger that runs payments, the numbers reconcile to the underlying transactions rather than to a separately maintained spreadsheet."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "Lenders receive regular portfolio reporting; the transaction trail behind it supports the 'show me' question examiners and LPs ask."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "Reporting that ties to the transaction trail is a diligence asset — it turns an LP or examiner request into a straightforward pull instead of a scramble."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Are the reports reconcilable?", "a": "Yes. Reporting is generated from the servicing ledger that runs collection and disbursement, so figures reconcile to the underlying transactions." },
+    { "q": "Can reporting support an LP or examiner review?", "a": "Yes. The underlying, retained transaction trail supports lender, LP, and examiner review on request." },
+    { "q": "Do you publish portfolio performance statistics on this site?", "a": "No. We do not publish assets under management, loan counts, recovery rates, or other performance statistics; reporting is delivered to the lender for their own book." }
+  ],
+  "ctaHeading": "See a reporting walkthrough",
+  "ctaBody": "Request a walkthrough of the reporting pack and the trail behind it."
+}

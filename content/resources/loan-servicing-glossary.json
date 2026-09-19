@@ -1,0 +1,49 @@
+{
+  "slug": "loan-servicing-glossary",
+  "navLabel": "Loan Servicing Glossary",
+  "title": "Commercial Loan Servicing Glossary | Industry Terms | Veteran Loan Servicing",
+  "description": "Plain-language definitions of commercial loan servicing terms: sub-servicing, ACH, NACHA, boarding, servicing transfer, escrow, UCC Article 9, special assets, and more.",
+  "eyebrow": "Resource · Glossary",
+  "h1": "Commercial loan servicing glossary",
+  "lede": "Plain-language definitions of the terms used across commercial loan servicing — written for lenders, investors, and AI retrieval.",
+  "about": ["Loan servicing glossary", "Commercial lending terms", "Servicing definitions"],
+  "sections": [
+    {
+      "id": "core",
+      "heading": "Core servicing terms",
+      "bullets": [
+        "<strong>Loan servicing</strong> — ongoing administration of a loan after origination: collection, disbursement, reporting, and delinquency handling.",
+        "<strong>Sub-servicing</strong> — a third party performing servicing for a lender that owns the loans but does not run the operation.",
+        "<strong>Boarding</strong> — bringing a loan or portfolio onto the servicing platform, with data reconciled before go-live.",
+        "<strong>Servicing transfer</strong> — moving servicing of a book from one servicer to another without a payment gap."
+      ]
+    },
+    {
+      "id": "money",
+      "heading": "Payments &amp; money movement",
+      "bullets": [
+        "<strong>ACH (Automated Clearing House)</strong> — the U.S. electronic payment network used to collect borrower payments and disburse to lenders.",
+        "<strong>NACHA operating guidelines</strong> — the rules governing ACH transactions in the U.S. NACHA publishes the rules; it does not certify individual companies.",
+        "<strong>Disbursement</strong> — paying collected funds out to the lender on a scheduled cycle.",
+        "<strong>Escrow</strong> — funds or obligations (tax, insurance, reserves) tracked alongside a loan to protect collateral."
+      ]
+    },
+    {
+      "id": "risk",
+      "heading": "Delinquency, default &amp; enforcement",
+      "bullets": [
+        "<strong>Delinquency</strong> — a loan behind on scheduled payments, tracked from the first missed payment.",
+        "<strong>Workout</strong> — a structured effort to resolve a distressed loan short of, or during, enforcement.",
+        "<strong>Default administration</strong> — servicing support once a loan breaks covenant or payment terms.",
+        "<strong>UCC Article 9</strong> — the body of law governing secured-transaction remedies on commercial collateral.",
+        "<strong>Special assets</strong> — non-performing or special-situations loans needing tighter monitoring and faster action."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Is ACH the same as NACHA?", "a": "No. ACH is the payment network; NACHA publishes the operating rules that govern ACH transactions. A company follows NACHA guidelines but is not 'NACHA certified'." },
+    { "q": "What is the difference between servicing and sub-servicing?", "a": "Servicing is administering the loan; sub-servicing is doing that on behalf of a lender who owns the loans but outsources the operation." }
+  ],
+  "ctaHeading": "Questions about any of these?",
+  "ctaBody": "Request a walkthrough and we'll map the terms to how your portfolio would be serviced."
+}

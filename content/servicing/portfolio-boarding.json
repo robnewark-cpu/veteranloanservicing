@@ -1,0 +1,56 @@
+{
+  "slug": "portfolio-boarding",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Portfolio Boarding",
+  "title": "Portfolio Boarding | Loan Onboarding & Ledger Migration | Veteran Loan Servicing",
+  "description": "How Veteran Loan Servicing boards a commercial loan portfolio: data intake, ledger migration, reconciliation, and go-live for CRE and business loan books.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Portfolio boarding, reconciled before go-live",
+  "lede": "Boarding is where servicing risk is won or lost. We migrate loan data, payment schedules, and lender disbursement details into the platform and reconcile them before a single payment cycle runs.",
+  "about": ["Loan boarding", "Portfolio onboarding", "Ledger migration", "Commercial loan servicing"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Boarding runs as a defined sequence: portfolio review, data intake, mapping into the servicing ledger, reconciliation against your source of record, and a go-live checkpoint. Nothing goes live until balances, rates, and schedules tie out."
+      ],
+      "bullets": [
+        "Portfolio review and scope confirmation",
+        "Loan, borrower, and lender data intake",
+        "Mapping into the servicing ledger",
+        "Reconciliation against your source of record",
+        "Go-live checkpoint and sign-off"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "Each boarded record is checked against the source file. Discrepancies are flagged and resolved before go-live rather than discovered mid-cycle. The boarding trail is retained so the migration itself is auditable."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "You receive a reconciliation summary at go-live: loans boarded, balances tied out, and any items held for clarification. From cycle one, boarded loans appear in standard portfolio reporting."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "A clean boarding reduces the disputes, misapplied payments, and reporting gaps that follow a rushed migration — and gives lenders and LPs confidence that the book was moved correctly."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "What data do you need to board a portfolio?", "a": "Loan-level balances, rates, payment schedules, borrower contact details, and lender disbursement instructions. We confirm the exact intake format during portfolio review." },
+    { "q": "How are boarded records verified?", "a": "Every boarded record is reconciled against your source of record before go-live; discrepancies are resolved first, not after payments begin." },
+    { "q": "Do you board residential loans?", "a": "No. Veteran Loan Servicing boards commercial real estate and business/commercial loans only. We do not service consumer residential mortgages." }
+  ],
+  "ctaHeading": "Plan a portfolio boarding",
+  "ctaBody": "Request a walkthrough of how your book would be boarded and reconciled before go-live."
+}

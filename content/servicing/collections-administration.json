@@ -1,0 +1,55 @@
+{
+  "slug": "collections-administration",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Collections Administration",
+  "title": "Collections Administration | Commercial Delinquency Management | Veteran Loan Servicing",
+  "description": "Commercial loan collections administration: delinquency tracking from first missed payment through structured recovery, documented in the servicing trail.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Collections administration for commercial books",
+  "lede": "Commercial collections is not consumer debt collection. It is disciplined delinquency management for institutional loans — tracked from the first missed payment through structured recovery.",
+  "about": ["Commercial collections", "Delinquency management", "Loan recovery"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Delinquency is tracked from the first missed payment. Accounts move through a defined sequence — notice, follow-up, escalation — with each step documented, and into workout or default administration when terms are broken."
+      ],
+      "bullets": [
+        "Delinquency flagged at first missed payment",
+        "Defined notice and follow-up sequence",
+        "Documented escalation steps",
+        "Handoff into workout / default administration"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "The collections sequence is defined rather than improvised, and every step is recorded in the servicing trail — the documentation lenders, examiners, and workout counsel need."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "Delinquency status and collection activity appear in portfolio reporting so lenders see which accounts are off-plan and what has been done about it."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "Catching delinquency early and documenting the response shortens time-to-signal and preserves the lender's recovery options."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Is this consumer debt collection?", "a": "No. This is commercial delinquency management for institutional loans — commercial real estate and business/commercial loans only, not consumer debt." },
+    { "q": "When does collections start?", "a": "Delinquency is tracked from the first missed payment, with a defined notice-and-escalation sequence documented in the servicing trail." },
+    { "q": "What happens if collection fails?", "a": "Accounts move into workout or default administration, including remedies available under UCC Article 9 where applicable." }
+  ],
+  "ctaHeading": "Review collections administration",
+  "ctaBody": "Request a walkthrough of the delinquency-to-recovery sequence for your portfolio."
+}

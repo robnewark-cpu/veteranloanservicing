@@ -1,0 +1,55 @@
+{
+  "slug": "special-assets",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Special Assets",
+  "title": "Special Assets | Non-Performing & Special-Situations Servicing | Veteran Loan Servicing",
+  "description": "Special assets servicing for non-performing and special-situations commercial loans: tight breach-to-action timing, documented workflows, and UCC Article 9 triggers.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Special assets — where timing is the product",
+  "lede": "For non-performing and special-situations commercial paper, the difference between recovery and loss is timing. We treat special assets as a servicing discipline with a documented trail, not an afterthought.",
+  "about": ["Special assets", "Non-performing loans", "Special situations", "NPL servicing"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "Special-situations and non-performing loans get tighter monitoring: breach signals are surfaced early, remediation steps are tracked, and UCC Article 9 enforcement triggers are documented so action is timely."
+      ],
+      "bullets": [
+        "Early breach detection on watch-list loans",
+        "Tracked remediation steps",
+        "Documented UCC Article 9 enforcement triggers",
+        "Coordination with the lender's workout counsel"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "Breach-to-action timing is driven by the operating trail rather than a quarterly report, and each step is documented so the special-asset file holds up."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "Watch-list and special-asset status appear in portfolio reporting, and the documented trail supports the lender's counsel and LP or examiner review."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "Performing books benefit from early detection; special-situations and NPL portfolios benefit most from tight breach-to-action timing and a clean, documented trail."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "What counts as a special asset?", "a": "Non-performing or special-situations commercial loans that need tighter monitoring and a faster path from breach signal to remediation." },
+    { "q": "Do you provide legal representation?", "a": "No. We document enforcement triggers and coordinate timing; legal remedies are pursued by the lender's own counsel." },
+    { "q": "Which portfolios benefit most?", "a": "Performing books benefit from early detection; special-situations and NPL portfolios benefit most from tight breach-to-action timing." }
+  ],
+  "ctaHeading": "Review special assets servicing",
+  "ctaBody": "Request a walkthrough of how special-situations loans are monitored and documented."
+}

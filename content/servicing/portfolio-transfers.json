@@ -1,0 +1,56 @@
+{
+  "slug": "portfolio-transfers",
+  "sectionLabel": "Servicing Operations",
+  "sectionSlug": "servicing",
+  "navLabel": "Portfolio Transfers",
+  "title": "Portfolio Transfers | Servicing Transfer & Loan Book Migration | Veteran Loan Servicing",
+  "description": "Servicing transfers for commercial loan portfolios: transfer-in from a prior servicer, borrower notification, data validation, and disbursement continuity.",
+  "eyebrow": "Servicing Operations",
+  "h1": "Servicing transfers without dropped payments",
+  "lede": "Whether you are moving a book off a prior servicer or acquiring a loan portfolio, the transfer is the moment borrowers and lenders judge the servicer. We plan it so collection and disbursement continue without a gap.",
+  "about": ["Servicing transfer", "Portfolio transfer", "Loan book migration", "Loan purchaser servicing"],
+  "sections": [
+    {
+      "id": "process",
+      "heading": "Process",
+      "paragraphs": [
+        "A transfer runs as a scheduled cutover: intake from the prior servicer or seller, validation of balances and payment history, borrower and lender notification, and a defined transfer date after which collection and disbursement run on our platform."
+      ],
+      "bullets": [
+        "Intake from prior servicer or loan seller",
+        "Validation of balances and payment history",
+        "Borrower and lender notification of the transfer",
+        "Defined transfer/cutover date",
+        "Continuity of ACH collection and lender disbursement"
+      ]
+    },
+    {
+      "id": "controls",
+      "heading": "Controls",
+      "paragraphs": [
+        "We validate the transferred data before the cutover date and keep a documented transfer trail. Payment instructions are confirmed so that the first post-transfer cycle collects and disburses correctly."
+      ]
+    },
+    {
+      "id": "reporting",
+      "heading": "Reporting",
+      "paragraphs": [
+        "You receive a transfer confirmation showing loans transferred, balances validated, and the effective transfer date. Post-transfer, the book appears in standard portfolio and disbursement reporting."
+      ]
+    },
+    {
+      "id": "benefits",
+      "heading": "Benefits",
+      "paragraphs": [
+        "A planned transfer protects the borrower relationship and the lender's cash flow, and gives a loan purchaser a clean, documented handover rather than an inherited mess."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Can you transfer in a book we just purchased?", "a": "Yes. We handle transfer-in from a prior servicer or directly from a loan seller, validating data before the cutover date." },
+    { "q": "Will borrowers experience a payment gap during transfer?", "a": "The transfer is planned so ACH collection and lender disbursement continue on schedule; borrowers and lenders are notified of the effective transfer date." },
+    { "q": "How are borrower payments handled after transfer?", "a": "Borrower payments are collected via ACH and disbursed to lenders on a scheduled monthly cycle, structured around NACHA operating guidelines, with a full audit trail maintained for every transaction." }
+  ],
+  "ctaHeading": "Plan a servicing transfer",
+  "ctaBody": "Request a transfer plan for a book you are moving or acquiring."
+}

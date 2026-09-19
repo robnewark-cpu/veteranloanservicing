@@ -1,0 +1,47 @@
+{
+  "slug": "what-is-commercial-loan-servicing",
+  "navLabel": "What Is Loan Servicing",
+  "title": "What Is Commercial Loan Servicing? | Plain-Language Guide | Veteran Loan Servicing",
+  "description": "A plain-language explanation of commercial loan servicing: what a servicer does, how sub-servicing works, and how it differs from residential mortgage servicing.",
+  "eyebrow": "Resource · Definitions",
+  "h1": "What is commercial loan servicing?",
+  "lede": "Commercial loan servicing is the ongoing administration of a loan after it is made — collecting payments, disbursing to the lender, tracking obligations, and handling delinquency — for commercial, not consumer, loans.",
+  "about": ["Commercial loan servicing", "Loan servicing definition", "Sub-servicing"],
+  "sections": [
+    {
+      "id": "definition",
+      "heading": "Definition",
+      "paragraphs": [
+        "A loan servicer administers a loan on behalf of the lender or investor who holds it. For commercial loans, that means collecting borrower payments, disbursing funds to the lender, producing statements and reporting, tracking insurance and escrow obligations, and managing delinquency and default when they occur.",
+        "A sub-servicer performs these functions for a lender that owns the loans but does not want to run the servicing operation itself."
+      ],
+      "bullets": [
+        "Payment collection and lender disbursement",
+        "Statements and portfolio reporting",
+        "Insurance and escrow obligation tracking",
+        "Delinquency, workout, and default administration"
+      ]
+    },
+    {
+      "id": "vs-residential",
+      "heading": "How is it different from residential mortgage servicing?",
+      "paragraphs": [
+        "Residential mortgage servicing is heavily regulated consumer activity governed by residential mortgage licensing regimes and consumer-protection rules. Commercial loan servicing is a B2B activity between institutional parties. Veteran Loan Servicing operates only in the commercial space and does not service consumer residential mortgages."
+      ]
+    },
+    {
+      "id": "why-outsource",
+      "heading": "Why lenders use a sub-servicer",
+      "paragraphs": [
+        "Running servicing in-house means building payment operations, reporting, delinquency workflows, and an audit trail. Many credit funds, banks, and specialty lenders prefer a sub-servicer so they can focus on originating and managing capital while a dedicated operation handles the back office."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "What does a loan servicer actually do?", "a": "Collects borrower payments, disburses to the lender, produces reporting, tracks insurance/escrow, and manages delinquency and default — all with an audit trail." },
+    { "q": "What is sub-servicing?", "a": "Sub-servicing is when a third party performs servicing functions for a lender that owns the loans but does not run the servicing operation itself." },
+    { "q": "Do you service residential mortgages?", "a": "No. Veteran Loan Servicing services commercial real estate and business/commercial loans only." }
+  ],
+  "ctaHeading": "Talk through your servicing needs",
+  "ctaBody": "Request a walkthrough of how sub-servicing would apply to your portfolio."
+}
